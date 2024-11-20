@@ -1,18 +1,38 @@
+/* Estilos generales para los íconos sociales */
 .social-icons {
-    margin-top: 10px; /* Reducido el margen superior */
+    margin-top: 10px;
     display: flex;
-    justify-content: center; /* Alineación centrada */
-    gap: 10px; /* Espacio entre los iconos más reducido */
+    justify-content: center;
+    gap: 10px;
     list-style: none;
     padding: 0;
 }
 
 .social-icons li a {
     font-size: 1.5rem;
-    color: #fff; /* Color predeterminado */
+    color: #fff;
     transition: color 0.3s;
 }
 
 .social-icons li a:hover {
-    color: #5126d5; /* Efecto de hover */
+    color: #5126d5; /* Cambia el color al pasar el mouse */
+    transform: scale(1.1); /* Añade un efecto de zoom */
+}
+
+
+/* Ocultar los íconos debajo del botón en dispositivos grandes */
+.social-container.mobile {
+    display: none;
+}
+
+/* Mostrar íconos debajo del botón "Más Sobre Mi" en dispositivos pequeños */
+@media screen and (max-width: 768px) {
+    .social-container.desktop {
+        display: none; /* Oculta los íconos en la sidebar */
+    }
+    .social-container.mobile {
+        display: flex; /* Muestra los íconos debajo del botón */
+        justify-content: center;
+        margin-top: 20px;
+    }
 }
