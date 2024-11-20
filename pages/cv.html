@@ -5,20 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Visualizador de PDF</title>
     <style>
-        /* Establecer que el iframe ocupe toda la página */
+        /* Establecer que el embed ocupe toda la página */
         html, body {
             height: 100%;
             margin: 0;
         }
-        iframe {
+        embed {
             width: 100%;
             height: 100%;
-            border: none;
         }
     </style>
 </head>
 <body>
-    <!-- Incrustar el PDF en el iframe -->
-    <iframe src="/assets/docs/CV.pdf" frameborder="0"></iframe>
+    <!-- Incrustar el PDF en el embed -->
+    <embed src="/assets/docs/CV.pdf" type="application/pdf">
 </body>
 </html>
