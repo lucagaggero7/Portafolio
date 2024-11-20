@@ -1,0 +1,12 @@
+#one .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegura que la imagen cubra completamente el espacio */
+}
+
+#one section {
+    background-size: cover; /* Hace que la imagen cubra el área completa */
+    background-position: center center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita la repetición de la imagen */
+    height: 100%; /* Asegura que el contenedor tenga la altura completa */
+}

@@ -1,0 +1,85 @@
+/* General styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 14px; /* Reduces the base font size */
+    line-height: 1.5;
+}
+
+#wrapper {
+    padding: 1.5em 1em; /* Compact the general space */
+}
+
+/* Contenedor general para alinear el contenido */
+.inner {
+    max-width: 800px; /* Ajusta el ancho deseado */
+    margin: 0 auto;   /* Centra el contenido */
+    text-align: right;
+}
+
+/* Título */
+h1.major {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+    word-wrap: break-word;
+}
+
+/* Párrafos */
+p {
+    font-size: 1em;
+    margin: 0.5em 0;
+    line-height: 1.6;
+}
+
+/* Imagen adaptativa */
+.image.fit img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Estilos para la barra de navegación */
+nav ul {
+    display: flex;
+    justify-content: flex-end; /* Alinear los elementos de la lista a la derecha */
+    gap: 1em; /* Reducir el espacio entre enlaces */
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+/* Media Query para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+    body {
+        font-size: 12px; /* Reducir el tamaño de la fuente en móviles */
+    }
+
+    #wrapper {
+        padding: 1em; /* Reducir el espacio de relleno en móviles */
+    }
+
+    /* Contenedor general para alinear el contenido */
+    .inner {
+        max-width: 100%; /* Hacer que ocupe todo el ancho en móviles */
+        padding: 0 10px; /* Añadir relleno lateral */
+        text-align: center; /* Centrar el contenido */
+    }
+
+    /* Título */
+    h1.major {
+        font-size: 1.5em; /* Reducir el tamaño del título en móviles */
+    }
+
+    /* Barra de navegación */
+    nav ul {
+        flex-direction: column; /* Cambiar a columna en móviles */
+        align-items: flex-end; /* Alinear los enlaces a la derecha */
+        gap: 0.5em; /* Reducir el espacio entre enlaces */
+    }
+
+    /* Imagen adaptativa */
+    .image.fit img {
+        width: 100%; /* Hacer que la imagen ocupe el 100% del ancho en móviles */
+    }
+}

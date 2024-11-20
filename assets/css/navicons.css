@@ -1,0 +1,18 @@
+.social-icons {
+    margin-top: 10px; /* Reducido el margen superior */
+    display: flex;
+    justify-content: center; /* Alineación centrada */
+    gap: 10px; /* Espacio entre los iconos más reducido */
+    list-style: none;
+    padding: 0;
+}
+
+.social-icons li a {
+    font-size: 1.5rem;
+    color: #fff; /* Color predeterminado */
+    transition: color 0.3s;
+}
+
+.social-icons li a:hover {
+    color: #5126d5; /* Efecto de hover */
+}

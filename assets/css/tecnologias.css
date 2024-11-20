@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 14px; /* Reducir el tamaño base de la fuente */
+    line-height: 1.5;
+}
+
+#wrapper {
+    padding: 1.5em 1em; /* Compactar el espacio general */
+}
+
+/* Contenedor general para alinear el contenido */
+.inner {
+    max-width: 800px; /* Ajusta el ancho deseado */
+    margin: 0 auto;   /* Centra el contenido */
+    text-align: right;
+}
+
+/* Título */
+h1.major {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+    word-wrap: break-word;
+}
+
+/* Párrafos */
+p {
+    font-size: 1em;
+    margin: 0.5em 0;
+    line-height: 1.6;
+}
+
+/* Imagen adaptativa */
+.image.fit img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end; /* Alinear los elementos de la lista a la derecha */
+    gap: 1em; /* Reducir el espacio entre enlaces */
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.comparison-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10px; /* Reducido margen */
+}
+
+.card-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%; /* Reducido ancho */
+    margin: 19px; /* Reducido margen */
+}
+
+.card-column h2 {
+    color: blue;
+    font-size: 1rem; /* Reducido al 25% */
+    margin-bottom: 10px; /* Ajustado margen inferior */
+}
+
+.card {
+    background-color: #3f51b5; /* Color índigo */
+    border-radius: 8px; /* Menos redondeo */
+    padding: 10px; /* Reducido el relleno */
+    color: white;
+    text-align: center;
+    margin: 25px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 106%;  /* Aumentado el ancho en un 5% */
+    font-size: 0.9rem; /* Reducido el tamaño */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+}
+
+/* Efecto al pasar el mouse por encima */
+.card:hover {
+    transform: translateY(-10px); /* Eleva la tarjeta */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Mayor sombra */
+}
+
+.card h3 {
+    font-size: 1rem; /* Reducido el tamaño */
+    margin-bottom: 5px; /* Reducido margen */
+}
+
+.card p {
+    font-size: 0.8rem; /* Reducido tamaño */
+}
+
+.card p strong {
+    color: #ffeb3b; /* Resalta los nombres de las tecnologías */
+}
+
+@media (max-width: 768px) {
+    .comparison-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-column {
+        width: 80%;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
