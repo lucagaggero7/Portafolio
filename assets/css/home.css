@@ -1,0 +1,21 @@
+.neon-text {
+    color: #40E0D0; /* Turquesa */
+    text-shadow: 
+      0 0 5px #000000, /* Borde negro */
+      0 0 10px #40E0D0, 
+      0 0 15px #FFB6C1, /* Rosa pastel */
+      0 0 20px #FFB6C1;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 1px;
+    transition: text-shadow 0.3s ease-in-out;
+  }
+  
+  .neon-text:hover {
+    text-shadow: 
+      0 0 10px #000000, /* Borde negro */
+      0 0 20px #40E0D0, 
+      0 0 30px #FFB6C1, 
+      0 0 40px #FFB6C1;
+  }
+  
