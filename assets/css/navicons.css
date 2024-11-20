@@ -1,3 +1,10 @@
+.logo-icons {
+    list-style: none;  /* Elimina los puntos de la lista */
+    padding: 0;        /* Elimina el espaciado interno */
+   
+}
+
+
 /* Estilos generales para los íconos sociales */
 .social-icons {
     margin-top: 10px;

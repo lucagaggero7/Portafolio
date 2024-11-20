@@ -1,5 +1,6 @@
 @import url(fontawesome-all.min.css);
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 
 /*
 	Hyperspace by HTML5 UP
@@ -117,7 +118,7 @@ input, select, textarea {
 
 	body, input, select, textarea {
     color: rgba(255, 255, 255, 0.55);
-    font-family: 'Inter', Arial, Helvetica, sans-serif; /* Cambiado a Inter */
+    font-family: 'Urbanist', Arial, Helvetica, sans-serif; /* Cambiado a Inter */
     font-size: 16.5pt;
     font-weight: normal;
     line-height: 1.75;

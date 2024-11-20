@@ -1,11 +1,15 @@
 function validarFormulario() {
-    var email = document.getElementById("email").value;
-    var regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    const nombre = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const mensaje = document.getElementById('message').value.trim();
 
-    if (!regex.test(email)) {
-        alert("Por favor, ingresa un correo electrónico válido.");
-        return false; // Evita que el formulario se envíe
+    if (!nombre || !email || !mensaje) {
+        alert('Por favor, completa todos los campos.');
+        return false;
     }
-
-    return true; // Permite que el formulario se envíe
+    if (!/\S+@\S+\.\S+/.test(email)) {
+        alert('Por favor, introduce un correo válido.');
+        return false;
+    }
+    return true;
 }
