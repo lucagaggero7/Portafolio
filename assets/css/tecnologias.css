@@ -1,3 +1,4 @@
+/* Estilos generales */
 body {
     margin: 0;
     padding: 0;
@@ -6,21 +7,30 @@ body {
 }
 
 #wrapper {
-    padding: 1.5em 1em; /* Compactar el espacio general */
+    padding: 1.0em 1em; /* Compactar el espacio general */
 }
 
-/* Contenedor general para alinear el contenido */
 .inner {
-    max-width: 800px; /* Ajusta el ancho deseado */
-    margin: 0 auto;   /* Centra el contenido */
+    max-width: 800px;
+    margin: 0 auto;
     text-align: right;
 }
 
-/* Título */
 h1.major {
-    font-size: 2em;
-    margin-bottom: 0.5em;
-    word-wrap: break-word;
+    font-size: 2em !important;
+    margin-top: -0.2em !important; /* Ajuste negativo para acercar el título */
+    margin-bottom: 1em !important;
+    padding: 0 !important;
+    word-wrap: break-word !important;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px; /* Ajusta el margen debajo del h3 */
 }
 
 /* Párrafos */
@@ -30,7 +40,6 @@ p {
     line-height: 1.6;
 }
 
-/* Imagen adaptativa */
 .image.fit img {
     max-width: 100%;
     height: auto;
@@ -40,8 +49,8 @@ p {
 
 nav ul {
     display: flex;
-    justify-content: flex-end; /* Alinear los elementos de la lista a la derecha */
-    gap: 1em; /* Reducir el espacio entre enlaces */
+    justify-content: flex-end;
+    gap: 1em;
     padding: 0;
     margin: 0;
     list-style: none;
@@ -49,68 +58,213 @@ nav ul {
 
 .comparison-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between; /* Asegura el espacio entre las columnas */
     flex-wrap: wrap;
-    margin-top: 10px; /* Reducido margen */
+    gap: 20px;
 }
 
 .card-column {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 25%; /* Reducido ancho */
-    margin: 19px; /* Reducido margen */
-}
-
-.card-column h2 {
-    color: blue;
-    font-size: 1rem; /* Reducido al 25% */
-    margin-bottom: 10px; /* Ajustado margen inferior */
+    width: 30%; /* Ocupa el 30% del ancho en pantallas grandes */
+    margin: 30px 0; /* Espaciado entre las columnas */
 }
 
 .card {
-    background-color: #3f51b5; /* Color índigo */
-    border-radius: 8px; /* Menos redondeo */
-    padding: 10px; /* Reducido el relleno */
+    background-color: rgba(63, 81, 181, 0.9);
+    border-radius: 12px;
+    padding: 10px;
     color: white;
     text-align: center;
-    margin: 25px 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    width: 106%;  /* Aumentado el ancho en un 5% */
-    font-size: 0.9rem; /* Reducido el tamaño */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.5), 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 60%;
+    width: 30%; /* Las tarjetas deben ocupar todo el ancho de su columna */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Efecto al pasar el mouse por encima */
 .card:hover {
-    transform: translateY(-10px); /* Eleva la tarjeta */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Mayor sombra */
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.8), 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+    .card:hover h2 {
+    text-shadow: 
+        1px 1px 2px rgba(0, 0, 0, 0.5),  /* Sombra ligera negra */
+        0 0 25px #0000ff,               /* Sombra azul fuerte al hacer hover */
+        0 0 5px #0000ff,                /* Sombra más suave azul */
+        0 0 15px #0000ff;               /* Sombra más difusa azul */
+    }
+    
+    /* Estilos específicos para h2 dentro de las tarjetas */
+.card h2 {
+    font-size: 1.8rem; /* Aumentar el tamaño de la fuente */
+    color: #ffffff; /* Color amarillo para el efecto neón */
+    text-shadow: 
+        1px 1px 2px rgba(0, 0, 0, 0.5),  /* Sombra ligera negra */
+        0 0 25px #2c7aff,               /* Sombra brillante verde aqua */
+        0 0 5px #2c7aff,                /* Sombra más suave */
+        0 0 15px #2c7aff;               /* Sombra más difusa */
+    margin-bottom: 1em; /* Espaciado inferior */
+    transition: text-shadow 0.3s ease; /* Transición suave para el cambio de sombra */
 }
 
 .card h3 {
-    font-size: 1rem; /* Reducido el tamaño */
-    margin-bottom: 5px; /* Reducido margen */
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Sombra gris oscura */
+    font-size: 1.1rem;
+    margin: 0px;
+    padding: 7px;
+    margin-bottom: 0em;
+    margin-top: -0.5em;
 }
 
 .card p {
-    font-size: 0.8rem; /* Reducido tamaño */
+    font-size: 0.9rem;
+    margin: 0;
+    padding: 0;
+    line-height: 1.4;
 }
 
 .card p strong {
-    color: #ffeb3b; /* Resalta los nombres de las tecnologías */
+    color: #bbf2ff; /* Color del texto */
+    margin-top: 10px; /* Da espacio encima del contenido en negrita */
+    font-weight: bold;
 }
 
+/* Asegura que las listas dentro de las cards no tengan márgenes o padding extra */
+.card ul {
+    padding-left: 1.5em; /* Ajusta el espacio a la izquierda */
+    list-style-type: disc; /* Añade los puntos de la lista */
+}
+
+.card ul li {
+}
+
+.card ul li strong {
+    display: inline; /* Mantiene el fuerte dentro del li */
+    margin-left: 0em; /* Alinea el texto al punto de la lista */
+}
+
+/* Media Queries */
+
+/* Para pantallas más pequeñas (celulares y tablets en modo vertical) */
 @media (max-width: 768px) {
     .comparison-container {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: row; /* Mantener las tarjetas alineadas horizontalmente */
+        justify-content: space-evenly; /* Distribuir las tarjetas uniformemente */
+        gap: 10px; /* Reducir el espacio entre las tarjetas */
     }
 
     .card-column {
-        width: 80%;
+        width: 40%; /* Las tarjetas ocuparán el 40% del ancho */
+        margin: 10px 0; /* Espaciado reducido */
     }
 
     .card {
-        width: 100%;
+        width: 100%; /* Las tarjetas ocuparán todo el ancho de la columna */
+        height: auto; /* Ajuste automático de la altura */
+        padding: 10px; /* Reducir el padding */
+    }
+
+    h1.major {
+        font-size: 1.6em; /* Reducir el tamaño del título */
+    }
+
+    h2 {
+        font-size: 1.3em; /* Reducir el tamaño de los subtítulos */
+    }
+
+    h3 {
+        font-size: 1.1em; /* Ajuste del tamaño de h3 */
+    }
+
+    p {
+        font-size: 0.9em; /* Ajuste del tamaño de los párrafos */
+    }
+}
+
+/* Para pantallas más pequeñas (celulares en modo apaisado) */
+/* Media Queries */
+
+/* Para pantallas más pequeñas (celulares y tablets en modo vertical) */
+@media (max-width: 768px) {
+    .comparison-container {
+        flex-direction: column; /* Cambiar la dirección de las columnas a fila */
+        align-items: center; /* Centrar las columnas */
+        gap: 20px; /* Aumentar el espacio entre las tarjetas */
+    }
+
+    .card-column {
+        width: 60%; /* Las tarjetas ocuparán un 60% del ancho */
+        margin: 20px 0; /* Espaciado adicional entre las tarjetas */
+    }
+
+    .card {
+        width: 100%; /* Las tarjetas ocuparán todo el ancho de la columna */
+        height: auto; /* Ajuste automático de la altura */
+        padding: 10px; /* Ajustar padding */
+    }
+
+    h1.major {
+        font-size: 1.6em; /* Reducir el tamaño del título */
+    }
+
+    h2 {
+        font-size: 1.3em; /* Reducir el tamaño de los subtítulos */
+    }
+
+    h3 {
+        font-size: 1.1em; /* Ajuste del tamaño de h3 */
+    }
+
+    p {
+        font-size: 0.9em; /* Ajuste del tamaño de los párrafos */
+    }
+}
+
+/* Para pantallas más pequeñas (celulares en modo apaisado) */
+@media (max-width: 480px) {
+    .comparison-container {
+        flex-direction: column; /* Cambiar la dirección de las columnas a fila */
+        align-items: center; /* Centrar las columnas */
+        gap: 20px; /* Aumentar el espacio entre las tarjetas */
+    }
+
+    .card-column {
+        width: 80%; /* Las tarjetas ocuparán más ancho */
+        margin: 20px 0; /* Espaciado adicional */
+    }
+
+    .card {
+        width: 100%; /* Las tarjetas ocuparán todo el ancho de la columna */
+        padding: 10px; /* Ajustar padding */
+    }
+
+    h1.major {
+        font-size: 1.4em; /* Ajustar aún más el tamaño del título */
+    }
+
+    h2 {
+        font-size: 1.2em; /* Ajustar el tamaño de los subtítulos */
+    }
+
+    h3 {
+        font-size: 1em; /* Reducir aún más el tamaño de h3 */
+    }
+
+    p {
+        font-size: 0.8em; /* Ajuste aún más el tamaño de los párrafos */
+    }
+
+    nav ul {
+        flex-direction: column; /* Menú de navegación en columna */
+        align-items: center; /* Centrar los items */
     }
 }
