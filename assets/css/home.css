@@ -5,8 +5,6 @@
       0 0 10px #40E0D0, 
       0 0 15px #FFB6C1, /* Rosa pastel */
       0 0 20px #FFB6C1;
-    font-weight: bold;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     letter-spacing: 1px;
     transition: text-shadow 0.3s ease-in-out;
   }
