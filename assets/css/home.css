@@ -1,19 +1,120 @@
+#intro {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#intro .inner {
+  max-width: 90%;
+  color: white;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: 768px) {
+  #intro {
+      height: 100vh;
+      padding: 20px;
+  }
+
+  #intro h1 {
+      font-size: 2.5em;
+      line-height: 1.3;
+  }
+
+  #intro p {
+      font-size: 1.2em;
+      margin-top: 15px;
+  }
+
+  .actions {
+      margin-top: 30px;
+  }
+
+  .social-container.mobile ul {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 30px;
+  }
+
+  .social-icons li {
+      list-style: none;
+  }
+}
+
+@media (max-width: 375px) {
+  #intro {
+      height: auto;
+      padding: 10px;
+  }
+
+  #intro h1 {
+      font-size: 2.2em;
+  }
+
+  #intro p {
+      font-size: 1.1em;
+  }
+
+  .actions {
+      margin-top: 20px;
+  }
+
+  .social-container.mobile ul {
+      margin-top: 20px;
+      gap: 10px;
+  }
+
+  .social-icons li a {
+      font-size: 1.2em;
+  }
+}
+
+@media (max-width: 414px) {
+  #intro {
+      height: 100vh;
+      padding: 20px;
+  }
+
+  #intro h1 {
+      font-size: 1.8em;
+  }
+
+  #intro p {
+      font-size: 0.9em;
+  }
+
+  .actions {
+      margin-top: 40px;
+  }
+
+  .social-container.mobile ul {
+      margin-top: 20px;
+      gap: 15px;
+  }
+
+  .social-icons li a {
+      font-size: 1.4em;
+  }
+}
+
 .neon-text {
-    color: #40E0D0; /* Turquesa */
-    text-shadow: 
-      0 0 5px #000000, /* Borde negro */
-      0 0 10px #40E0D0, 
-      0 0 15px #FFB6C1, /* Rosa pastel */
-      0 0 20px #FFB6C1;
-    letter-spacing: 1px;
-    transition: text-shadow 0.3s ease-in-out;
-  }
-  
-  .neon-text:hover {
-    text-shadow: 
-      0 0 10px #000000, /* Borde negro */
-      0 0 20px #40E0D0, 
-      0 0 30px #FFB6C1, 
-      0 0 40px #FFB6C1;
-  }
-  
+  color: #40E0D0;
+  text-shadow: 
+    0 0 5px #000000,
+    0 0 10px #40E0D0, 
+    0 0 15px #FFB6C1,
+    0 0 20px #FFB6C1;
+  letter-spacing: 1px;
+  transition: text-shadow 0.3s ease-in-out;
+}
+
+.neon-text:hover {
+  text-shadow: 
+    0 0 10px #000000,
+    0 0 20px #40E0D0, 
+    0 0 30px #FFB6C1, 
+    0 0 40px #FFB6C1;
+}
