@@ -1,5 +1,6 @@
 /* Estilos generales */
 body {
+    background-color: #333966 !important;
     margin: 0;
     padding: 0;
     font-size: 14px; /* Reducir el tamaño base de la fuente */
@@ -72,7 +73,7 @@ nav ul {
 }
 
 .card {
-    background-color: rgba(63, 81, 181, 0.9);
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo semi-transparente blanco */
     border-radius: 12px;
     padding: 10px;
     color: white;
@@ -85,13 +86,14 @@ nav ul {
     height: 60%;
     width: 30%; /* Las tarjetas deben ocupar todo el ancho de su columna */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    backdrop-filter: blur(10px); /* Efecto de difuminado de fondo */
+    -webkit-backdrop-filter: blur(10px); /* Para compatibilidad con Safari */
 }
 
 .card:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(255, 255, 255, 0.8), 0 10px 20px rgba(0, 0, 0, 0.2);
 }
-
     .card:hover h2 {
     text-shadow: 
         1px 1px 2px rgba(0, 0, 0, 0.5),  /* Sombra ligera negra */
@@ -101,17 +103,17 @@ nav ul {
     }
     
     /* Estilos específicos para h2 dentro de las tarjetas */
-.card h2 {
-    font-size: 1.8rem; /* Aumentar el tamaño de la fuente */
-    color: #ffffff; /* Color amarillo para el efecto neón */
-    text-shadow: 
-        1px 1px 2px rgba(0, 0, 0, 0.5),  /* Sombra ligera negra */
-        0 0 25px #2c7aff,               /* Sombra brillante verde aqua */
-        0 0 5px #2c7aff,                /* Sombra más suave */
-        0 0 15px #2c7aff;               /* Sombra más difusa */
-    margin-bottom: 1em; /* Espaciado inferior */
-    transition: text-shadow 0.3s ease; /* Transición suave para el cambio de sombra */
-}
+    .card h2 {
+        font-size: 1.8rem;
+        color: #ffffff;
+        text-shadow: 
+            1px 1px 2px rgba(0, 0, 0, 0.5), 
+            0 0 25px #2c7aff, 
+            0 0 5px #2c7aff, 
+            0 0 15px #2c7aff;
+        margin-bottom: 1em;
+        transition: text-shadow 0.3s ease;
+    }
 
 .card h3 {
     font-weight: 600;
