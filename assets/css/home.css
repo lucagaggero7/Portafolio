@@ -100,24 +100,47 @@
   }
 }
 
+/* Contenedor específico para esta sección */
+.seccion-neon {
+    background: linear-gradient(135deg, #00BFFF, #1E90FF, #87CEFA); /* Gradiente diagonal */
+    background-color: #463b62; /* Fallback para navegadores antiguos */
+    padding: 50px; /* Espaciado interno */
+    text-align: center;
+    border-radius: 10px; /* Opcional, para un diseño más suave */
+    color: #ffffff; /* Color claro para texto normal */
+    margin: 20px auto;
+    max-width: 800px; /* Limitar el ancho de la sección */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra para resaltar la sección */
+}
+
+.diferencia {
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
 .neon-text {
-  color: #0834fc;
-  text-shadow: 
-    0 0 5px #000000,
-    0 0 10px #0834fc, 
-    0 0 15px #FFB6C1,
-    0 0 20px #FFB6C1;
-  letter-spacing: 1px;
-  transition: text-shadow 0.3s ease-in-out;
+    color: #00BFFF; /* Azul brillante */
+    text-shadow: 
+        0 0 5px #000000,               /* Sombra oscura para la base */
+        0 0 15px #00BFFF,              /* Resplandor azul más intenso */
+        0 0 20px #00BFFF,              /* Resplandor azul */
+        0 0 30px #1E90FF,              /* Sombra azul más clara para dar contraste */
+        0 0 40px #1E90FF;              /* Resplandor azul más claro */
+    letter-spacing: 1px;
+    transition: text-shadow 0.3s ease-in-out;
 }
 
 .neon-text:hover {
-  text-shadow: 
-    0 0 10px #000000,
-    0 0 20px #0834fc, 
-    0 0 30px #FFB6C1, 
-    0 0 40px #FFB6C1;
+    text-shadow: 
+        0 0 10px #000000,             /* Sombra base oscura */
+        0 0 20px #00BFFF,             /* Resplandor azul más fuerte */
+        0 0 30px #00BFFF,             /* Resplandor azul más fuerte */
+        0 0 50px #1E90FF,             /* Resplandor azul más grande */
+        0 0 60px #1E90FF;             /* Resplandor azul más grande */
 }
+
 
 h2.diferencia{
    margin-top: 1em;
