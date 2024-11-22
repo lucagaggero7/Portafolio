@@ -28,22 +28,58 @@ body {
   }
   
   .card {
+    position: relative; /* Necesario para pseudo-elementos y contenido interno */
     flex: 0 0 25%;
     max-width: 25%;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
+    background-color: rgba(255, 255, 255, 0.3); /* Fondo blanco translúcido */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Borde translúcido */
     padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(8px); /* Desenfoque para el efecto de vidrio */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra inicial */
     overflow: hidden;
     height: fit-content;
-  }
+    transition: all 0.3s ease; /* Efecto suave de hover */
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.15); /* Capa adicional para mayor efecto de vidrio */
+    z-index: -1;
+    border-radius: 12px; /* Asegura que coincida con el borde de la tarjeta */
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4); /* Sombra más intensa al pasar el mouse */
+    transform: scale(1.05); /* Efecto de agrandamiento */
+}
+
+.card:hover::before {
+    background: rgba(255, 255, 255, 0.25); /* Capa más clara al pasar el mouse */
+}
+
   
   .card p {
     margin: 0.5rem 0;
-    color: black;
+    font-weight:600;
+    color: rgba(0, 0, 0, 0.85); /* Negro con opacidad para suavizar */
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.15), 
+    0 0 10px rgba(255, 255, 255, 0.2); /* Sombras sutiles y modernas */
+transition: color 0.3s ease, text-shadow 0.3s ease; /* Transición suave */
     line-height: 1.6;
   }
+
+  .card:hover p {
+    color: rgba(0, 0, 0, 0.95); /* Más oscuro al pasar el mouse */
+    text-shadow: 0 2px 4px rgba(153, 153, 153, 0.815), 
+                 0 0 15px rgba(104, 104, 104, 0.815); /* Más sombra para resaltar */
+}
   
   .swiper-container {
     position: relative;
@@ -109,6 +145,12 @@ body {
     .wrapper > .inner {
       padding: 0.7em 0em 1em 0em !important;
     }
+
+    .swiper-container{
+      margin-top: 0.5rem;
+    }
+
+
   }
   
   @media (max-width: 768px) {
