@@ -1,85 +1,142 @@
-/* General styles */
 body {
     margin: 0;
     padding: 0;
-    font-size: 14px; /* Reduces the base font size */
+    font-size: 14px;
     line-height: 1.5;
-}
-
-#wrapper {
-    padding: 1.5em 1em; /* Compact the general space */
-}
-
-/* Contenedor general para alinear el contenido */
-.inner {
-    max-width: 800px; /* Ajusta el ancho deseado */
-    margin: 0 auto;   /* Centra el contenido */
-    text-align: right;
-}
-
-/* Título */
-h1.major {
+  }
+  
+  #wrapper {
+    padding: 1.5em 1em;
+  }
+  
+  .inner {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  h1.major {
     font-size: 2em;
     margin-bottom: 0.5em;
     word-wrap: break-word;
-}
-
-/* Párrafos */
-p {
-    font-size: 1em;
-    margin: 0.5em 0;
+    text-align: right;
+  }
+  
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .card {
+    flex: 0 0 25%;
+    max-width: 25%;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    height: fit-content;
+  }
+  
+  .card p {
+    margin: 0.5rem 0;
+    color: black;
     line-height: 1.6;
-}
-
-/* Imagen adaptativa */
-.image.fit img {
-    max-width: 100%;
+  }
+  
+  .swiper-container {
+    position: relative;
+    max-width: 73%;
+    aspect-ratio: 15.6 / 9;
+    height: 100%;
+    padding-bottom: 10px;
+    overflow: hidden;
+  }
+  
+  .swiper-slide img {
+    width: 100%;
     height: auto;
     display: block;
-    margin: 0 auto;
-}
-
-/* Estilos para la barra de navegación */
-nav ul {
+    object-fit: contain;
+    user-select: none;
+  }
+  
+  .swiper-button-next,
+  .swiper-button-prev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border-radius: 70%;
     display: flex;
-    justify-content: flex-end; /* Alinear los elementos de la lista a la derecha */
-    gap: 1em; /* Reducir el espacio entre enlaces */
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
-
-/* Media Query para pantallas pequeñas (móviles) */
-@media (max-width: 768px) {
-    body {
-        font-size: 12px; /* Reducir el tamaño de la fuente en móviles */
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    user-select: none;
+  }
+  
+  .swiper-button-next:hover,
+  .swiper-button-prev:hover {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    box-shadow: 0 0 10px rgba(42, 82, 190, 0.6);
+  }
+  
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
+    font-size: 20px !important;
+    color: white !important;
+  }
+  
+  .swiper-button-next {
+    right: 0px;
+  }
+  
+  .swiper-button-prev {
+    left: 0px;
+  }
+  
+  .swiper-pagination-bullet-active {
+    background: wheat !important;
+  }
+  
+  @media screen and (max-width: 1680px) {
+    .wrapper > .inner {
+      padding: 0.7em 0em 1em 0em !important;
     }
-
-    #wrapper {
-        padding: 1em; /* Reducir el espacio de relleno en móviles */
+  }
+  
+  @media (max-width: 768px) {
+    .flex-container {
+      flex-direction: column;
     }
-
-    /* Contenedor general para alinear el contenido */
-    .inner {
-        max-width: 100%; /* Hacer que ocupe todo el ancho en móviles */
-        padding: 0 10px; /* Añadir relleno lateral */
-        text-align: center; /* Centrar el contenido */
+  
+    .card {
+      flex: 1 1 auto;
+      max-width: 100%;
+      order: 1;
     }
-
-    /* Título */
-    h1.major {
-        font-size: 1.5em; /* Reducir el tamaño del título en móviles */
+  
+    .swiper-container {
+      flex: 1 1 auto;
+      max-width: 100%;
+      order: 2;
     }
-
-    /* Barra de navegación */
-    nav ul {
-        flex-direction: column; /* Cambiar a columna en móviles */
-        align-items: flex-end; /* Alinear los enlaces a la derecha */
-        gap: 0.5em; /* Reducir el espacio entre enlaces */
+  
+    .swiper-button-next,
+    .swiper-button-prev {
+      width: 30px;
+      height: 30px;
     }
-
-    /* Imagen adaptativa */
-    .image.fit img {
-        width: 100%; /* Hacer que la imagen ocupe el 100% del ancho en móviles */
+  
+    .swiper-button-next:after,
+    .swiper-button-prev:after {
+      font-size: 16px;
     }
-}
+  }
+  

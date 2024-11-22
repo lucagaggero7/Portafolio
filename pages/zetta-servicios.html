@@ -1,77 +1,99 @@
 <!DOCTYPE HTML>
 <html>
-	<head>
-		<title>Proyecto Zetta Servicios</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<!--CSS-->
-		<link rel="stylesheet" href="/assets/css/main.css" />
-		<link rel="stylesheet" href="/assets/css/navicons.css" />
-		<link rel="stylesheet" href="/assets/css/proyectos.css" />
-		<noscript><link rel="stylesheet" href="/assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
-		<!---->
-		<header id="header">
-			<a href="/index.html#one" class="title">Proyectos</a>
-			<nav>
-				<ul>
-					<li><a href="/index.html">Home</a></li>
-					<li><a href="/pages/zetta-servicios.html" class="active">Zetta Servicios</a></li>
-					<li><a href="/pages/innobra.html">INNOBRA</a></li>
-					<li><a href="/pages/proyecto-inicio.html">Proyecto Inicio</a></li>
-				</ul>
-			</nav>
-		</header>
-		<!---->
-		<section id="main" class="wrapper">
-			<div class="inner">
-				<h1 class="major">Zetta Servicios</h1>
-				<p>
-					Esto comenzo como un proyecto para la materia Modelado y Arquitectura de Software de mi actual carrera como tecnico superior en desarollo de software, nos encargaron buscar un cliente real que estuviera interesado en automatizar su trabajo o tareas, en este caso encontre a Victor, el se dedica principalmente a realizar obras de plomeria, electricidad calefaccion, entre otras cosas a domicilios particulares, nos conto que el trabajaba con  un excel donde cargaba todos los datos de sus clientes y las obras a realizar, etc.. Con ese excel arme la base de datos ya que principalmente trabajo todos mis proyectos  en database-first y de esa forma pude ir modelando el sistema con mis conocimientos en .NET 8 y bases de datos SQL
-				</p>
-				<p>
-					El resultado fue una aplicacion web totalmente responsive para todos los dispositivos siguiendo al pie de la letra los requisitos y casos de uso que pidio el cliente
-				</p>
-				<span class="image fit">
-					<img src="/images/pic01.png" alt="Zetta Servicios" />
-				</span>
-			</div>
-		</section>
-		<!---->
-		<footer id="footer" class="wrapper alt">
-			<div class="inner">
-				<ul class="social-icons">
-					<li>
-						<a href="https://github.com/lucagaggero7" class="icon brands fa-github" target="_blank">
-							<span class="label">GitHub</span>
-						</a>
-					</li>
-					<li>
-						<a href="https://www.instagram.com/stefanogaggero_/" class="icon brands fa-instagram" target="_blank">
-							<span class="label">Instagram</span>
-						</a>
-					</li>
-					<li>
-						<a href="https://www.linkedin.com/in/stefano-gaggero-508a09183/" class="icon brands fa-linkedin-in" target="_blank">
-							<span class="label">LinkedIn</span>
-						</a>
-					</li>
-					<li>
-						<a href="https://wa.me/543572403100" class="icon brands fa-whatsapp" target="_blank">
-							<span class="label">WhatsApp</span>
-						</a>
-					</li>
-				</ul>
-			</div>
-		</footer>
-			<!--JS-->
-			<script src="/assets/js/jquery.min.js"></script>
-			<script src="/assets/js/jquery.scrollex.min.js"></script>
-			<script src="/assets/js/jquery.scrolly.min.js"></script>
-			<script src="/assets/js/browser.min.js"></script>
-			<script src="/assets/js/breakpoints.min.js"></script>
-			<script src="/assets/js/util.js"></script>
-			<script src="/assets/js/main.js"></script>
-	</body>
+  <head>
+    <title>Proyecto Zetta Servicios</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <link rel="stylesheet" href="/assets/css/navicons.css" />
+    <link rel="stylesheet" href="/assets/css/proyectos.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <noscript><link rel="stylesheet" href="/assets/css/noscript.css" /></noscript>
+  </head>
+  <body class="is-preload">
+    <header id="header">
+      <a href="/index.html#one" class="title">Proyectos</a>
+      <nav>
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/pages/zetta-servicios.html" class="active">Zetta Servicios</a></li>
+          <li><a href="/pages/innobra.html">INNOBRA</a></li>
+          <li><a href="/pages/proyecto-inicio.html">Proyecto Inicio</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="main" class="wrapper">
+      <div class="inner">
+        <h1 class="major">Zetta Servicios</h1>
+        <div class="flex-container">
+          <!---->
+          <div class="card">
+            <p>
+              Esto comenzó como un proyecto para la materia Modelado y Arquitectura de Software de mi actual carrera como técnico superior en desarrollo de software. Nos encargaron buscar un cliente real interesado en automatizar su trabajo o tareas. En este caso, encontré a Víctor. Él se dedica principalmente a realizar obras de plomería, electricidad, calefacción, entre otras cosas, en domicilios particulares.
+            </p>
+            <p>
+              Nos contó que trabajaba con un Excel donde cargaba todos los datos de sus clientes y las obras a realizar. Con ese Excel armé la base de datos, ya que principalmente trabajo todos mis proyectos en database-first, y de esa forma pude ir modelando el sistema con mis conocimientos en .NET 8 y bases de datos SQL.
+            </p>
+          </div>
+
+          <!---->
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="/images/pic01.png" alt="Zetta Servicios Imagen 1" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/images/pic02.png" alt="Zetta Servicios Imagen 2" />
+              </div>
+            </div>
+            <!---->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <!---->
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer" class="wrapper alt">
+      <div class="inner">
+        <ul class="social-icons">
+          <li>
+            <a href="https://github.com/lucagaggero7" class="icon brands fa-github" target="_blank">
+              <span class="label">GitHub</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/stefanogaggero_/" class="icon brands fa-instagram" target="_blank">
+              <span class="label">Instagram</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/stefano-gaggero-508a09183/" class="icon brands fa-linkedin-in" target="_blank">
+              <span class="label">LinkedIn</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://wa.me/543572403100" class="icon brands fa-whatsapp" target="_blank">
+              <span class="label">WhatsApp</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/jquery.scrollex.min.js"></script>
+    <script src="/assets/js/jquery.scrolly.min.js"></script>
+    <script src="/assets/js/browser.min.js"></script>
+    <script src="/assets/js/breakpoints.min.js"></script>
+    <script src="/assets/js/util.js"></script>
+    <script src="/assets/js/main.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="/assets/js/swiper.js"></script>
+  </body>
 </html>
