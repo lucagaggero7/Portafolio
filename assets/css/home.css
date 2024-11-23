@@ -12,6 +12,12 @@
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
+.presentacion{
+    color: #0035ff; 
+    font-size: 1.15em; 
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
 @media (max-width: 768px) {
   #intro {
       height: 100vh;
