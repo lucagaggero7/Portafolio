@@ -1,9 +1,9 @@
 #three {
-    padding-bottom: calc(5px + var(--base-padding, 0px)); /* Aumenta 1px al padding */
+    padding-bottom: calc(5px + var(--base-padding, 0px));
   }
   
 
   textarea {
-    resize: none; /* Evita que el campo de texto sea redimensionado */
+    resize: none; 
   }
   

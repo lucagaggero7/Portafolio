@@ -1,25 +1,24 @@
-/* Estilo para dispositivos móviles */
 @media (max-width: 768px) {
     .wrapper.style2.spotlights section {
         display: flex;
-        flex-direction: column; /* Asegura que los elementos estén en columna */
-        align-items: center; /* Centra los elementos */
+        flex-direction: column;
+        align-items: center;
     }
 
     .wrapper.style2.spotlights section .content {
-        order: 1; /* El contenido (texto) va primero */
-        margin-bottom: 10px; /* Espacio entre el texto y la imagen */
+        order: 1;
+        margin-bottom: 10px;
     }
 
     .wrapper.style2.spotlights section .image {
-        order: 2; /* La imagen va después del contenido */
-        margin-top: 10px; /* Espacio entre el contenido y la imagen */
-        display: block; /* Asegura que la imagen sea bloque */
-        width: 100%; /* Hace que la imagen ocupe todo el ancho del contenedor */
+        order: 2;
+        margin-top: 10px;
+        display: block;
+        width: 100%;
     }
 
     .wrapper.style2.spotlights section .actions {
-        order: 3; /* El botón va después de la imagen */
-        margin-top: 10px; /* Espacio entre la imagen y el botón */
+        order: 3;
+        margin-top: 10px;
     }
 }

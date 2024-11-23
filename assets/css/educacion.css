@@ -1,79 +1,73 @@
-/* Estilos específicos para la sección con id 'four' */
 #four {
-    background-color: #4A0072; /* Morado oscuro para el fondo */
-    padding: 40px 20px; /* Reducido el padding */
-    text-align: center;
-  }
-  
+  background-color: #4A0072;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+#four .inner {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+#four .section-title {
+  font-size: 2.2rem;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+#four .education-item h2 {
+  font-size: 1.6rem;
+  color: #00BFFF;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+#four .education-item h3 {
+  font-size: 1rem;
+  color: #D3D3D3;
+  margin-bottom: 10px;
+}
+
+#four .education-item p {
+  font-size: 0.9rem;
+  color: #B0B0B0;
+  margin-bottom: 20px;
+}
+
+#four .actions {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 55px;
+}
+
+#four .education-item {
+  margin-bottom: 25px;
+}
+
+@media (max-width: 768px) {
   #four .inner {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 10px; /* Espaciado interior más ajustado */
-  }
-  
-  #four .section-title {
-    font-size: 2.2rem; /* Reducido el tamaño del título */
-    color: #FFFFFF; /* Blanco para mayor contraste */
-    margin-bottom: 20px; /* Menor margen inferior */
-    font-weight: bold;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-  }
-  
-  /* Estilo para los títulos de las subsecciones dentro de #four */
-  #four .education-item h2 {
-    font-size: 1.6rem; /* Reducido el tamaño del título de la subsección */
-    color: #00BFFF; /* Azul claro brillante para los títulos */
-    font-weight: bold;
-    margin-bottom: 6px;
-  }
-  
-  #four .education-item h3 {
-    font-size: 1rem; /* Reducido el tamaño del subtítulo */
-    color: #D3D3D3; /* Gris claro para los subtítulos */
-    margin-bottom: 10px; /* Reducido el margen inferior */
-  }
-  
-  /* Estilo para los párrafos dentro de education-item */
-  #four .education-item p {
-    font-size: 0.9rem; /* Fuente un poco más pequeña */
-    color: #B0B0B0; /* Gris para el texto adicional */
-    margin-bottom: 20px; /* Reducido el margen inferior */
-  }
-  
-  /* Estilo para las acciones (no se modifican los botones, solo la distribución) */
-  #four .actions {
-    display: flex;
-    justify-content: center;
-    gap: 15px; /* Reducido el espacio entre botones */
-    margin-top: 55px; /* Reducido el margen superior */
-  }
-  
-  #four .education-item {
-    margin-bottom: 25px; /* Reducido el margen entre elementos educativos */
-  }
-  
-  /* Responsive: Ajustar la distribución en pantallas pequeñas */
-  @media (max-width: 768px) {
-    #four .inner {
       padding: 10px;
-    }
-  
-    #four .section-title {
-      font-size: 2rem; /* Reducir tamaño del título en pantallas pequeñas */
-    }
-  
-    #four .education-item h2 {
-      font-size: 1.4rem; /* Reducir aún más el tamaño del título */
-    }
-  
-    #four .education-item h3 {
-      font-size: 0.9rem;
-    }
-  
-    #four .actions {
-      flex-direction: column; /* Apilar los botones en pantallas pequeñas */
-      gap: 10px; /* Reducir el espacio entre los botones */
-    }
   }
-  
+
+  #four .section-title {
+      font-size: 2rem;
+  }
+
+  #four .education-item h2 {
+      font-size: 1.4rem;
+  }
+
+  #four .education-item h3 {
+      font-size: 0.9rem;
+  }
+
+  #four .actions {
+      flex-direction: column;
+      gap: 10px;
+  }
+}

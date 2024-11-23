@@ -1,180 +1,173 @@
 body {
-    margin: 0;
-    padding: 0;
-    font-size: 14px;
-    line-height: 1.5;
-  }
-  
-  #wrapper {
-    padding: 1.5em 1em;
-  }
-  
-  .inner {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  h1.major {
-    font-size: 2em;
-    margin-bottom: 0.5em;
-    word-wrap: break-word;
-    text-align: right;
-  }
-  
-  .flex-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-  }
-  
-  .card {
-    position: relative; /* Necesario para pseudo-elementos y contenido interno */
-    flex: 0 0 25%;
-    max-width: 25%;
-    background-color: rgba(255, 255, 255, 0.3); /* Fondo blanco translúcido */
-    border: 1px solid rgba(255, 255, 255, 0.2); /* Borde translúcido */
-    padding: 1rem;
-    border-radius: 12px;
-    backdrop-filter: blur(8px); /* Desenfoque para el efecto de vidrio */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra inicial */
-    overflow: hidden;
-    height: fit-content;
-    transition: all 0.3s ease; /* Efecto suave de hover */
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+#wrapper {
+  padding: 1.5em 1em;
+}
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1.major {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+  word-wrap: break-word;
+  text-align: right;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.card {
+  position: relative;
+  flex: 0 0 25%;
+  max-width: 25%;
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 1rem;
+  border-radius: 12px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  height: fit-content;
+  transition: all 0.3s ease;
 }
 
 .card::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.15); /* Capa adicional para mayor efecto de vidrio */
-    z-index: -1;
-    border-radius: 12px; /* Asegura que coincida con el borde de la tarjeta */
-    transition: all 0.3s ease;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.15);
+  z-index: -1;
+  border-radius: 12px;
+  transition: all 0.3s ease;
 }
 
 .card:hover {
-    transform: scale(1.05); /* Efecto de agrandamiento */
+  transform: scale(1.05);
 }
 
 .card:hover::before {
-    background: rgba(255, 255, 255, 0.25); /* Capa más clara al pasar el mouse */
+  background: rgba(255, 255, 255, 0.25);
 }
 
-  
-  .card p {
-    margin: 0.5rem 0;
-    font-weight:600;
-    color: rgba(0, 0, 0, 0.85); /* Negro con opacidad para suavizar */
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.15), 
-    0 0 10px rgba(255, 255, 255, 0.2); /* Sombras sutiles y modernas */
-transition: color 0.3s ease, text-shadow 0.3s ease; /* Transición suave */
-    line-height: 1.6;
-    letter-spacing: 1px; /* Aumenta el espaciado entre letras */
-  }
-  
-  
-  
-  .swiper-container {
-    position: relative;
-    max-width: 73%;
-    aspect-ratio: 15.6 / 9;
-    height: 100%;
-    padding-bottom: 10px;
-    overflow: hidden;
-  }
-  
-  .swiper-slide img {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: contain;
-    user-select: none;
-  }
-  
-  .swiper-button-next,
-  .swiper-button-prev {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 10;
-    width: 40px;
-    height: 40px;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border-radius: 70%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    user-select: none;
-  }
-  
-  .swiper-button-next:hover,
-  .swiper-button-prev:hover {
-    background: linear-gradient(135deg, #6a11cb, #2575fc);
-    box-shadow: 0 0 10px rgba(42, 82, 190, 0.6);
-  }
-  
-  .swiper-button-next:after,
-  .swiper-button-prev:after {
-    font-size: 20px !important;
-    color: white !important;
-  }
-  
-  .swiper-button-next {
-    right: 0px;
-  }
-  
-  .swiper-button-prev {
-    left: 0px;
-  }
-  
-  .swiper-pagination-bullet-active {
-    background: wheat !important;
-  }
-  
-  @media screen and (max-width: 1680px) {
-    .wrapper > .inner {
+.card p {
+  margin: 0.5rem 0;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.85);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.15), 0 0 10px rgba(255, 255, 255, 0.2);
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+  line-height: 1.6;
+  letter-spacing: 1px;
+}
+
+.swiper-container {
+  position: relative;
+  max-width: 73%;
+  aspect-ratio: 15.6 / 9;
+  height: 100%;
+  padding-bottom: 10px;
+  overflow: hidden;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  user-select: none;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border-radius: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  user-select: none;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  box-shadow: 0 0 10px rgba(42, 82, 190, 0.6);
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 20px !important;
+  color: white !important;
+}
+
+.swiper-button-next {
+  right: 0px;
+}
+
+.swiper-button-prev {
+  left: 0px;
+}
+
+.swiper-pagination-bullet-active {
+  background: wheat !important;
+}
+
+@media screen and (max-width: 1680px) {
+  .wrapper > .inner {
       padding: 0.7em 0em 1em 0em !important;
-    }
-
-    .swiper-container{
-      margin-top: 0.5rem;
-    }
-
-
   }
-  
-  @media (max-width: 768px) {
-    .flex-container {
+
+  .swiper-container {
+      margin-top: 0.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .flex-container {
       flex-direction: column;
-    }
-  
-    .card {
+  }
+
+  .card {
       flex: 1 1 auto;
       max-width: 100%;
       order: 1;
-    }
-  
-    .swiper-container {
+  }
+
+  .swiper-container {
       flex: 1 1 auto;
       max-width: 100%;
       order: 2;
-    }
-  
-    .swiper-button-next,
-    .swiper-button-prev {
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
       width: 30px;
       height: 30px;
-    }
-  
-    .swiper-button-next:after,
-    .swiper-button-prev:after {
-      font-size: 16px;
-    }
   }
-  
+
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
+      font-size: 16px;
+  }
+}

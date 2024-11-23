@@ -12,10 +12,61 @@
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
+.inner h1{
+    color: white !important;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7) !important;
+}
+
 .presentacion{
     color: #0035ff; 
     font-size: 1.15em; 
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+a{
+    text-decoration: none !important;
+    border: none !important;
+}
+
+#intro .mas a {
+  color: lightskyblue;
+  font-size: 1.2rem;
+  position: relative;
+  font-weight: 500;
+  margin-left: 5px;
+}
+
+
+a .highlight {
+  color: lightskyblue; 
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+
+a:hover .highlight {
+  color: #00D1FF; 
+  transform: scale(0.9); 
+}
+
+a .highlight::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 100%;
+  height: 2px;
+  background-color: #00D1FF; 
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+a:hover .highlight::after {
+  transform: scaleX(1);
+  background-color: #0035ff; 
 }
 
 @media (max-width: 768px) {
@@ -60,8 +111,6 @@
 
 
 }
-
-
 
 @media (max-width: 414px) {
   #intro {
@@ -127,17 +176,16 @@
     }
   }
 
-/* Contenedor específico para esta sección */
 .seccion-neon {
-    background: linear-gradient(135deg, #00BFFF, #1E90FF, #87CEFA); /* Gradiente diagonal */
-    background-color: #463b62; /* Fallback para navegadores antiguos */
-    padding: 50px; /* Espaciado interno */
+    background: linear-gradient(135deg, #00BFFF, #1E90FF, #87CEFA); 
+    background-color: #463b62;
+    padding: 50px; 
     text-align: center;
-    border-radius: 10px; /* Opcional, para un diseño más suave */
-    color: #ffffff; /* Color claro para texto normal */
+    border-radius: 10px; 
+    color: #ffffff; 
     margin: 20px auto;
-    max-width: 800px; /* Limitar el ancho de la sección */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra para resaltar la sección */
+    max-width: 800px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 .diferencia {
@@ -148,24 +196,22 @@
 }
 
 .neon-text {
-    color: #00BFFF; /* Azul brillante */
+    color: #00BFFF; 
     text-shadow: 
-        0 0 5px #000000,               /* Sombra oscura para la base */
-        0 0 15px #00BFFF,              /* Resplandor azul más intenso */
-        0 0 20px #00BFFF,              /* Resplandor azul */
-        0 0 30px #1E90FF,              /* Sombra azul más clara para dar contraste */
-        0 0 40px #1E90FF;              /* Resplandor azul más claro */
+        0 0 5px #000000,
+        0 0 15px #00BFFF,
+        0 0 20px #00BFFF,
+        0 0 30px #1E90FF,
+        0 0 40px #1E90FF;
     letter-spacing: 1px;
     transition: text-shadow 0.3s ease-in-out;
 }
 
 .neon-text:hover {
     text-shadow: 
-        0 0 10px #000000,             /* Sombra base oscura */
-        0 0 20px #00BFFF,             /* Resplandor azul más fuerte */
-        0 0 30px #00BFFF,             /* Resplandor azul más fuerte */
-        0 0 50px #1E90FF,             /* Resplandor azul más grande */
-        0 0 60px #1E90FF;             /* Resplandor azul más grande */
+        0 0 10px #000000,
+        0 0 20px #00BFFF,
+        0 0 30px #00BFFF,
 }
 
 
