@@ -56,7 +56,6 @@ body {
 }
 
 .card:hover {
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4); /* Sombra más intensa al pasar el mouse */
     transform: scale(1.05); /* Efecto de agrandamiento */
 }
 
@@ -73,13 +72,10 @@ body {
     0 0 10px rgba(255, 255, 255, 0.2); /* Sombras sutiles y modernas */
 transition: color 0.3s ease, text-shadow 0.3s ease; /* Transición suave */
     line-height: 1.6;
+    letter-spacing: 1px; /* Aumenta el espaciado entre letras */
   }
-
-  .card:hover p {
-    color: rgba(0, 0, 0, 0.95); /* Más oscuro al pasar el mouse */
-    text-shadow: 0 2px 4px rgba(153, 153, 153, 0.815), 
-                 0 0 15px rgba(104, 104, 104, 0.815); /* Más sombra para resaltar */
-}
+  
+  
   
   .swiper-container {
     position: relative;
