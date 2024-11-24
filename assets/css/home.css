@@ -69,6 +69,51 @@ a:hover .highlight::after {
   background-color: #0035ff; 
 }
 
+.seccion-neon {
+    background: linear-gradient(135deg, #00BFFF, #1E90FF, #87CEFA); 
+    background-color: #463b62;
+    padding: 50px; 
+    text-align: center;
+    border-radius: 10px; 
+    color: #ffffff; 
+    margin: 20px auto;
+    max-width: 800px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.diferencia {
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+.neon-text {
+    color: #00BFFF; 
+    text-shadow: 
+        0 0 5px #000000,
+        0 0 15px #00BFFF,
+        0 0 20px #00BFFF,
+        0 0 30px #1E90FF,
+        0 0 40px #1E90FF;
+    letter-spacing: 1px;
+    transition: text-shadow 0.3s ease-in-out;
+}
+
+.neon-text:hover {
+    text-shadow: 
+        0 0 10px #00BFFF,
+        0 0 20px #00BFFF,
+        0 0 30px #00BFFF,
+        0 0 40px #00BFFF;
+    transition: text-shadow 0.6s ease-in-out;
+}
+
+h2.diferencia{
+   margin-top: 1em;
+   font-size: 1.70em !important;
+}
+
 @media (max-width: 768px) {
   #intro {
       height: 100vh;
@@ -176,46 +221,3 @@ a:hover .highlight::after {
     }
   }
 
-.seccion-neon {
-    background: linear-gradient(135deg, #00BFFF, #1E90FF, #87CEFA); 
-    background-color: #463b62;
-    padding: 50px; 
-    text-align: center;
-    border-radius: 10px; 
-    color: #ffffff; 
-    margin: 20px auto;
-    max-width: 800px; 
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-}
-
-.diferencia {
-    font-size: 36px;
-    font-weight: bold;
-    letter-spacing: 1px;
-    margin: 0;
-}
-
-.neon-text {
-    color: #00BFFF; 
-    text-shadow: 
-        0 0 5px #000000,
-        0 0 15px #00BFFF,
-        0 0 20px #00BFFF,
-        0 0 30px #1E90FF,
-        0 0 40px #1E90FF;
-    letter-spacing: 1px;
-    transition: text-shadow 0.3s ease-in-out;
-}
-
-.neon-text:hover {
-    text-shadow: 
-        0 0 10px #000000,
-        0 0 20px #00BFFF,
-        0 0 30px #00BFFF,
-}
-
-
-h2.diferencia{
-   margin-top: 1em;
-   font-size: 1.70em !important;
-}
