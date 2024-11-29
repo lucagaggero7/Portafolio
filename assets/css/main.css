@@ -2011,7 +2011,7 @@ input, select, textarea {
 	}
 
 		.features section {
-			padding: 2em 1em 1em 5em;
+			padding: 2em 1em 0.5em 5em;
 			width: 50%;
 			border-top: solid 1px rgba(255, 255, 255, 0.15);
 			position: relative;
