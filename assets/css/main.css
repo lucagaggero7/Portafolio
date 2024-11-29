@@ -161,6 +161,22 @@ input, select, textarea {
 			color: #ffffff;
 		}
 
+	button {
+		-moz-transition: color 0.2s ease, border-bottom-color 0.2s ease;
+		-webkit-transition: color 0.2s ease, border-bottom-color 0.2s ease;
+		-ms-transition: color 0.2s ease, border-bottom-color 0.2s ease;
+		transition: color 0.2s ease, border-bottom-color 0.2s ease;
+		border-bottom: dotted 1px rgba(255, 255, 255, 0.35);
+		color: inherit;
+		text-decoration: none;
+	}
+
+		button:hover {
+		border-bottom-color: transparent;
+		color: #ffffff;
+		}
+		
+
 	strong, b {
 		color: #ffffff;
 		font-weight: bold;
@@ -1818,7 +1834,7 @@ input, select, textarea {
 		}
 
 /* Button */
-
+/* 
 	input[type="submit"],
 	input[type="reset"],
 	input[type="button"],
@@ -1975,7 +1991,7 @@ input, select, textarea {
 				button:hover:active:after,
 				.button:hover:active:after {
 					opacity: 0.1;
-				}
+				} */
 
 /* Features */
 
