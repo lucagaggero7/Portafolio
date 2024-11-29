@@ -1,5 +1,10 @@
 #three {
     padding-bottom: calc(5px + var(--base-padding, 0px));
+
+    
+  }
+  #three h2{
+    margin-top: 3rem;
   }
   
 
