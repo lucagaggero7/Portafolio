@@ -84,7 +84,11 @@ a:hover .highlight::after {
 
 
 #sidebar {
-    background-color: #000000dd !important;
+    background-color: #262626 !important;
+}
+
+body{
+    background-color: #262626 !important;
 }
 
 #one {
