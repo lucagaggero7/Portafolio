@@ -3,11 +3,11 @@
     padding: 0.75rem 2rem;
     font-size: 1rem;
     text-decoration: none;
-    color: rgba(255, 255, 255, 0.8); /* Texto blanco transparente */
-    border: 1px solid transparent; /* Borde transparente */
+    color: rgba(255, 255, 255, 0.8); 
+    border: 1px solid transparent; 
     border-radius: 5px;
-    background: rgba(255, 255, 255, 0.1); /* Fondo gris suave */
-    box-shadow: 0 0 5px rgba(255, 255, 255, 0.3); /* Sombra suave gris para destacarlo */
+    background: rgba(255, 255, 255, 0.1); 
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.3); 
     transition: all 0.3s ease;
     text-decoration: none !important;
     border: none !important;
@@ -16,8 +16,8 @@
 
 .button-outline:hover {
     color: #fff;
-    background: rgba(255, 255, 255, 0.3); /* Fondo gris más visible en hover */
-    border-color: rgba(255, 255, 255, 0.7); /* Borde blanco más visible en hover */
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6); /* Sombra más intensa en hover */
-    transform: translateY(-5px); /* Efecto de elevación */
+    background: rgba(255, 255, 255, 0.3); 
+    border-color: rgba(255, 255, 255, 0.7); 
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6); 
+    transform: translateY(-5px); 
 }

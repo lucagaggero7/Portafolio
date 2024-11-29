@@ -3931,7 +3931,6 @@ input, select, textarea {
 		position: relative;
 	}
 	
-	/* Fondo semitransparente que cubre toda la sección */
 	#intro::before {
     content: "";
     position: absolute;
@@ -3939,21 +3938,20 @@ input, select, textarea {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 1; /* Asegura que el fondo esté detrás del contenido */
+    z-index: 1; 
 	}
 
-/* Estilizamos el contenido interno */
 	#intro .inner {
     position: relative;
-    z-index: 2; /* Coloca el texto por encima del fondo */
-    text-align: left; /* Centra el texto horizontalmente */
+    z-index: 2; 
+    text-align: left;
     color: white;
     padding: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: left;
     align-items: left;
-    height: 100%; /* Centra verticalmente el contenido */
+    height: 100%; 
 	}
 	
 
