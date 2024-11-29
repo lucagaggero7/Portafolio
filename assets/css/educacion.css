@@ -10,15 +10,6 @@
   padding: 10px;
 }
 
-#four .section-title {
-  font-size: 2.2rem;
-  color: #FFFFFF;
-  margin-bottom: 20px;
-  font-weight: normal !important;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-}
-
 #four .education-item h2 {
   font-size: 1.6rem;
   color: #00BFFF;
@@ -42,7 +33,7 @@
   display: flex;
   justify-content: center;
   gap: 15px;
-  margin-top: 55px;
+  margin-top: 65px;
 }
 
 #four .education-item {

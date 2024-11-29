@@ -23,6 +23,43 @@
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
+.project-title {
+    font-size: 2.2rem;
+    color: #FFFFFF;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7) !important;
+    letter-spacing: 2px;
+    font-weight: normal !important;
+    text-transform: uppercase;
+    margin-top: 1.5rem;
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+  }
+
+.diferencia-title{
+    font-size: 2.2rem;
+    color: #FFFFFF;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7) !important;
+    letter-spacing: 2px;
+    font-weight: normal !important;
+    text-transform: uppercase;
+    margin-top: 1.5rem;
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+
+}
+
+.educacion-title{
+    font-size: 2.2rem;
+    color: #FFFFFF;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7) !important;
+    letter-spacing: 2px;
+    font-weight: normal !important;
+    text-transform: uppercase;
+    margin-top: 0rem;
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+}
+
 a{
     text-decoration: none !important;
     border: none !important;
@@ -114,15 +151,6 @@ body{
     margin-bottom: 1em !important;
 }
 
-.diferencia {
-   font-size: 2.2rem;
-   color: #FFFFFF;
-   font-weight: normal !important;
-   letter-spacing: 2px;
-   text-transform: uppercase;
-   margin-top: 1.5rem;
-   margin-bottom: 1.5rem;
-}
 
 /* .neon-text {
     color: #00BFFF; 
