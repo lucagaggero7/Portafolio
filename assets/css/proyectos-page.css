@@ -1,3 +1,11 @@
+body{
+    background-color: indigo;
+}
+
+#header{
+    background-color: #383838;
+  }
+
 .project-grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -79,6 +87,7 @@
     padding: 1rem 2rem;
     margin-top: -1rem;
   }
+
 
 
   

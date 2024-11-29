@@ -1,17 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000px" height="500px" viewBox="0 0 1000 500" zoomAndPan="disable" preserveAspectRatio="none">
-
     <style type="text/css"><![CDATA[
         line {
-            stroke: rgba(255, 255, 255, 0.30); /* Líneas blanquecinas con mayor transparencia */
+            stroke: rgba(51, 93, 255, 0.6); /* Líneas blancas con menos opacidad */
             stroke-width: 1.5px;
         }
 
         rect {
-            fill: rgba(0, 0, 0, 0.4); /* Fondo semitransparente negro */
+            fill: rgba(0, 0 , 0, 0.9); /* Fondo oscuro con transparencia */
         }
     ]]></style>
 
-    <!-- Fondo semitransparente que cubre todo el SVG -->
+    <!-- Fondo oscuro con transparencia -->
     <rect x="0" y="0" width="1000" height="500" />
 
     <!-- Líneas decorativas -->

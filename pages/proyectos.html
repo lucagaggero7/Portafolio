@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/assets/css/main.css" />
     <link rel="stylesheet" href="/assets/css/navicons.css" />
     <link rel="stylesheet" href="/assets/css/proyectos.css" />
+    <link rel="stylesheet" href="/assets/css/proyectos-page.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <noscript><link rel="stylesheet" href="/assets/css/noscript.css" /></noscript>
   </head>
@@ -17,43 +18,58 @@
       <nav>
         <ul>
           <li><a href="/index.html">Home</a></li>
-          <li><a href="/pages/proyectos/zetta-servicios.html" >Zetta Servicios</a></li>
-          <li><a href="/pages/proyectos/innobra.html" >INNOBRA</a></li>
-          <li><a href="/pages/proyectos/proyecto-inicio.html" class="active">Proyecto Inicio</a></li>
-          <li><a href="/pages/proyectos/crud-empleados.html">Crud Empleados</a></li>
+          <li><a href="/pages/tecnologias.html" >Tecnologías</a></li>
+          <li><a href="/pages/proyectos.html" class="active">Proyectos</a></li>
         </ul>
       </nav>
     </header>
     <!---->
     <section id="main" class="wrapper">
       <div class="inner">
-        <h1 class="major"> <a href="https://github.com/lucagaggero7/Proyecto_Inicio" class="icon brands fa-github" target="_blank">
-          <span class="label">GitHub</span>
-        </a>Proyecto Inicio</h1>
-        <div class="flex-container">
-          <!---->
-          <div class="card">
-            <p>
-				Este fue el proyecto con el que se inicio el aprendizaje en .NET 8 y Blazor Webassembly, realizado conjuntamente con el profesor de la materia modelado y arquitectura de software para un crud basico de tipos de documentos.
-				Como resultado logramos implementar conceptos como paginas razor, estilos css, AutoMapper, SweetAlert, entre otras tecnologias innovadoras para el desarrollo web.
-            </p>
+        <h1 class="major">
+        </a>Mis Proyectos</h1>
+        <div class="wrapper style2 project-grid-container">
+
+							
+          <div class="project-card">
+          <img src="/images/pic01.png" alt="Zetta Servicios" class="project-card-image" />
+          <div class="project-card-content">
+            <h3>Zetta Servicios</h3>
+            <p>Proyecto de gestion, seguimiento y mantenimiento para gasista matriculado. Realizado usando enfoque database First.</p>
+            <a href="proyectos/zetta-servicios.html" class="project-button">Ver detalles</a>
           </div>
-          <!---->
-          <div class="swiper-container">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img src="/images/pic05.png" alt="INNOBRA Imagen 1" />
-              </div>
-              <div class="swiper-slide">
-                <img src="/images/pic06.png" alt="INNOBRA Imagen 2" />
-              </div>
+          </div>
+        
+          <div class="project-card">
+          <img src="/images/pic03.png" alt="INNOBRA" class="project-card-image" />
+          <div class="project-card-content">
+            <h3>INNOBRA</h3>
+            <p>Proyecto de gestion de obras para la materia Practica Profesionalizante I. Realizado grupalmente utilizando metodología Scrumban</p>
+            <a href="proyectos/innobra.html" class="project-button">Ver detalles</a>
+          </div>
+          </div>
+
+          <div class="project-card">
+            <img src="/images/pic05.png" Salt="Proyecto 2024" class="project-card-image" />
+            <div class="project-card-content">
+              <h3>Proyecto Inicio</h3>
+              <p>Proyecto de gestion de personal para la materia Modelado y Arquitecura de Software. Realizado siguiendo las clases del profesor.</p>
+              <a href="proyectos/proyecto-inicio.html" class="project-button">Ver detalles</a>
             </div>
-            <!---->
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <!---->
-            <div class="swiper-pagination"></div>
+            </div>
+
+        
+          <div class="project-card">
+          <img src="/images/pic07.png" alt="Proyecto 2024" class="project-card-image" />
+          <div class="project-card-content">
+            <h3>CRUD Empleados</h3>
+            <p>Proyecto de gestion de empleados para poner a prueba mis habilidades en ASP.NET WebForms, utilizando enfoque Databse First.</p>
+            <a href="proyectos/crud-empleados.html" class="project-button">Ver detalles</a>
           </div>
+          </div>
+
+       
+        </div>
         </div>
       </div>
     </section>

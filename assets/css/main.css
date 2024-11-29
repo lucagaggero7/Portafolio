@@ -19,7 +19,6 @@ section, summary, time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	user-select: none;
 	vertical-align: baseline;}
 	
 
@@ -97,7 +96,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #312450;
+		background: color ;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -3241,16 +3240,9 @@ input, select, textarea {
 			background-color: #261c3e;
 		}
 
-		.wrapper.style1 {
-			background-color: #5e42a6;
-		}
 
 		.wrapper.style1-alt {
 			background-color: #493382;
-		}
-
-		.wrapper.style2 {
-			background-color: #5052b5;
 		}
 
 		/* Estilos generales para pantallas grandes (escritorio) */
@@ -3414,7 +3406,6 @@ input, select, textarea {
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
-		background-color: #5e42a6;
 		cursor: default;
 		padding: 1.75em 2em;
 	}
@@ -3568,7 +3559,6 @@ input, select, textarea {
 
 	#sidebar {
 		padding: 2.5em 2.5em 0.5em 2.5em ;
-		background: #312450;
 		cursor: default;
 		height: 100vh;
 		left: 0;
@@ -3933,7 +3923,6 @@ input, select, textarea {
     left: 0;
     width: 100%;
     height: 100%;
-	background: rgb(66 5 120 / 61%);
     z-index: 1; /* Asegura que el fondo esté detrás del contenido */
 	}
 

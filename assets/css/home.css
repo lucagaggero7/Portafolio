@@ -81,14 +81,46 @@ a:hover .highlight::after {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
-.diferencia {
-    font-size: 36px;
-    font-weight: bold;
-    letter-spacing: 1px;
-    margin: 0;
+
+
+#sidebar {
+    background-color: #000000dd !important;
 }
 
-.neon-text {
+#one {
+
+    background-color: #0023aa !important;
+}
+
+#two {
+
+    background-color: #0035ff !important;
+}
+
+#four{
+
+    background-color: #0025b3 !important;
+}
+
+#three{
+    background-color: #001566 !important;
+}
+
+.features{
+    margin-bottom: 0em !important;
+}
+
+.diferencia {
+   font-size: 2.2rem;
+   color: #FFFFFF;
+   font-weight: normal !important;
+   letter-spacing: 2px;
+   text-transform: uppercase;
+   margin-top: 1.5rem;
+   margin-bottom: 1.5rem;
+}
+
+/* .neon-text {
     color: #00BFFF; 
     text-shadow: 
         0 0 5px #000000,
@@ -107,12 +139,8 @@ a:hover .highlight::after {
         0 0 30px #00BFFF,
         0 0 40px #00BFFF;
     transition: text-shadow 0.6s ease-in-out;
-}
+} */
 
-h2.diferencia{
-   margin-top: 1em;
-   font-size: 1.70em !important;
-}
 
 @media (max-width: 768px) {
   #intro {

@@ -1,6 +1,5 @@
 #three {
     padding-bottom: calc(5px + var(--base-padding, 0px));
-
     
   }
   #three h2{
