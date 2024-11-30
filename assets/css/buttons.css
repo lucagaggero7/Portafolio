@@ -24,6 +24,15 @@
     transform: translateY(-5px); 
 }
 
+
+@media (max-width: 400px) {
+  .button-outline {
+      padding: 0.45rem 1.2rem; 
+      font-size: 0.8rem;       
+      box-shadow: 0 0 3px rgba(255, 255, 255, 0.3); 
+  }
+}
+
 /* Botones de seccion proyectos en home */
 .project-button-container {
     text-align: left;
