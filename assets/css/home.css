@@ -1,3 +1,11 @@
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-image: url("images/intro-dark.svg"); 
+    }
+}
+
+
 #intro {
   height: 100vh;
   display: flex;
