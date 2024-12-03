@@ -1,17 +1,19 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000px" height="500px" viewBox="0 0 1000 500" zoomAndPan="disable" preserveAspectRatio="none">
     <style type="text/css"><![CDATA[
         line {
-            stroke: rgba(51, 93, 255, 0.6);
+            stroke: rgba(51, 93, 255, 0.6); /* Líneas blancas con menos opacidad */
             stroke-width: 1.5px;
         }
 
         rect {
-            fill: rgb(0, 0 , 0) !important; 
+            fill: rgba(0, 0 , 0, 0.9); /* Fondo oscuro con transparencia */
         }
     ]]></style>
 
-    <rect x="0" y="0" width="1000" height="500" fill="rgb(0, 0, 0)" />
+    <!-- Fondo oscuro con transparencia -->
+    <rect x="0" y="0" width="1000" height="500" />
 
+    <!-- Líneas decorativas -->
     <line x1="1100" y1="500" x2="-1000" y2="250" />
     <line x1="1100" y1="500" x2="-1000" y2="-100" />
     <line x1="1100" y1="500" x2="-1000" y2="-500" />
