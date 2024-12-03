@@ -88,6 +88,9 @@ body{
     margin-top: -1rem;
   }
 
-
-
+  @media (max-width: 768px) {
+    .wrapper {
+      padding: 1rem;
+    }
+  }
   

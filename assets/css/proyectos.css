@@ -150,6 +150,11 @@ h1.major {
 }
 
 @media (max-width: 768px) {
+
+  .wrapper{
+    padding: 1rem;
+  }
+
   .flex-container {
       flex-direction: column;
   }

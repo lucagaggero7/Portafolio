@@ -21,7 +21,7 @@ body {
 }
 
 h1.major {
-    font-size: 2em !important;
+    font-size: 2em;
     margin-top: 1em !important;
     margin-bottom: 1em !important;
     padding: 0 !important;
@@ -150,7 +150,36 @@ nav ul {
 .card ul li strong {
     display: inline;
     margin-left: 0em;
+    font-weight: normal !important;
 }
+
+            
+ul {
+    line-height: 1.5em;
+    margin: 5px 0 15px;
+    padding: 0;
+  }
+  
+  li {
+    list-style: none;
+    position: relative;
+    padding: 0 8px 0 20px !important;
+    margin-top: 2px;
+  }
+
+          
+.card ul li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 6px;
+    height: 5px;
+    width: 5px;
+    border: 1px solid cyan;
+    border-width: 2px 2px 0 0;
+    transform: rotate(45deg);
+  }
+      
 
 @media (max-width: 768px) {
     .comparison-container {
@@ -160,57 +189,34 @@ nav ul {
     }
 
     .card-column {
-        width: 40%;
-        margin: 10px 0;
-    }
-
-    .card {
-        width: 100%;
-        height: auto;
-        padding: 10px;
-    }
-
-    h1.major {
-        font-size: 1.6em;
-    }
-
-    h2 {
-        font-size: 1.3em;
-    }
-
-    h3 {
-        font-size: 1.1em;
-    }
-
-    p {
-        font-size: 0.9em;
-    }
-}
-
-@media (max-width: 768px) {
-    .comparison-container {
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-    }
-
-    .card-column {
-        width: 60%;
+        max-width: 30%;
         margin: 20px 0;
     }
 
     .card {
-        width: 100%;
+        max-width: 29%;
         height: auto;
         padding: 10px;
+    }
+
+    .card ul li  {
+        margin-top: 1em ;
     }
 
     h1.major {
         font-size: 1.6em;
     }
 
-    h2 {
-        font-size: 1.3em;
+    .card h2 {
+        font-size: 1.0em;
+    }
+
+    .card h3{
+        font-size: 0.8em;
+    }
+
+    .card ul li{
+        font-size: 0.6em;
     }
 
     h3 {
@@ -222,9 +228,10 @@ nav ul {
     }
 }
 
+
 @media (max-width: 480px) {
     .comparison-container {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         gap: 20px;
     }
