@@ -128,17 +128,6 @@ body{
     background-color: #262626 !important;
 }
 
-
-/* Asegúrate de que cualquier preferencia de modo oscuro sea ignorada */
-@media (prefers-color-scheme: dark) {
-    :root {
-      --background-color: #ffffff !important;
-      --text-color: #000000 !important;
-      --link-color: #007BFF !important;
-    }
-  }
-  
-
 #one {
 
     background-color: #0023aa !important;
