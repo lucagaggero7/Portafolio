@@ -1,7 +1,12 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <title>Tecnologías y herramientas que utilizo</title>
+    <head>
+        <title id="page-title" data-es="Portafolio profesional de Stefano Gaggero" data-en="Stefano Gaggero Portfolio">
+            Portafolio profesional de Stefano Gaggero
+        </title>
+    </head>
+    
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <!--CSS-->
@@ -12,26 +17,39 @@
 </head>
 <body class="is-preload">
     <!---->
-    <header id="header">
+    <header class="lang es" id="header">
         <a href="/pages/tecnologias.html" class="title">Tecnologías</a>
         <nav>
             <ul>
-                <li><a href="/index.html">Home</a></li>
+                <li><a href="/index.html">Inicio</a></li>
                 <li><a href="/pages/tecnologias.html" class="active">Tecnologías</a></li>
                 <li><a href="/pages/proyectos.html">Proyectos</a></li>
             </ul>
-        </nav>
+        </nav>    
+    </header>
+
+    <header class="lang en hidden" id="header">
+        <a href="/pages/tecnologias.html" class="title">Technologies</a>
+        <nav>
+    <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/pages/tecnologias.html" class="active">Technologies</a></li>
+        <li><a href="/pages/proyectos.html">Project</a></li>
+    </ul>
+</nav>
     </header>
     <!---->
     <section id="main" class="wrapper">
         <div class="inner">
-            <h1 class="major">Tecnologías y herramientas que utilizo</h1>
+            <h1 class="major lang es">Tecnologías y herramientas que utilizo</h1>
+            <h1 class="major lang en">My technologies and tools</h1>
             <div class="comparison-container">
                 <!---->
                 <div class="card">
                     <h2>BACKEND</h2>
                     <div class="section">
-                        <h3>Lenguajes</h3>
+                        <h3 class="lang es">Lenguajes</h3>
+                        <h3 class="lang en hidden">Languages</h3>
                         <ul>
                             <li><strong>C#</strong></li>
                             <li><strong>SQL</strong></li>
@@ -46,7 +64,8 @@
                         </ul>
                     </div>
                     <div class="section">
-                        <h3>Tecnologías</h3>
+                        <h3 class="lang es">Tecnologías</h3>
+                        <h3 class="lang en hidden">Technologies</h3>
                         <ul>
                             <li><strong>API REST</strong></li>
                             <li><strong>JWT</strong></li>
@@ -57,7 +76,8 @@
                 <div class="card">
                     <h2>FRONTEND</h2>
                     <div class="section">
-                        <h3>Lenguajes</h3>
+                        <h3 class="lang es">Lenguajes</h3>
+                        <h3 class="lang en hidden">Languages</h3>
                         <ul>
                             <li><strong>HTML</strong></li>
                             <li><strong>CSS</strong></li>
@@ -73,7 +93,8 @@
                         </ul>
                     </div>
                     <div class="section">
-                        <h3>Tecnologías</h3>
+                        <h3 class="lang es">Tecnologías</h3>
+                        <h3 class="lang en hidden">Technologies</h3>
                         <ul>
                             <li><strong>Bootstrap</strong></li>
                             <li><strong>Tailwind</strong></li>
@@ -84,7 +105,8 @@
                 <div class="card">
                     <h2>DEVOPS</h2>
                     <div class="section">
-                        <h3>Lenguajes</h3>
+                        <h3 class="lang es">Lenguajes</h3>
+                        <h3 class="lang en hidden">Languages</h3>
                         <ul>
                             <li><strong>Git</strong></li>
                             <li><strong>YAML</strong></li>
@@ -92,7 +114,8 @@
                         </ul>
                     </div>
                     <div class="section">
-                        <h3>Herramientas</h3>
+                        <h3 class="lang es">Herraminetas</h3>
+                        <h3 class="lang en hidden">Tools</h3>
                         <ul>
                             <li><strong>Visual Studio 2022</strong></li>
                             <li><strong>VS Code</strong></li>
@@ -100,7 +123,8 @@
                         </ul>
                     </div>
                     <div class="section">
-                        <h3>Tecnologías</h3>
+                        <h3 class="lang es">Tecnologías</h3>
+                        <h3 class="lang en hidden">Technologies</h3>
                         <ul>
                             <li><strong>Railway</strong></li>
                             <li><strong>CI/CD</strong></li>
@@ -135,6 +159,16 @@
                     </a>
                 </li>
             </ul>
+            <ul class="actions">
+                <li ><!-- Selector de idioma -->
+                    <div class="language-selector">
+                        <select id="language">
+                            <option value="es">Español</option>
+                            <option value="en">English</option>
+                        </select>
+                    </div>
+                </li>
+            </ul>
         </div>
     </footer>
     <!--JS-->
@@ -145,5 +179,6 @@
     <script src="/assets/js/breakpoints.min.js"></script>
     <script src="/assets/js/util.js"></script>
     <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/language-selector.js"></script>
 </body>
 </html>

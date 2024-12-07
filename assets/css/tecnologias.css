@@ -14,6 +14,11 @@ body {
     padding: 1.0em 1em;
 }
 
+
+.hidden{
+    display: none !important;
+}
+
 .inner {
     max-width: 800px;
     margin: 0 auto;
@@ -170,6 +175,11 @@ ul {
     border-width: 2px 2px 0 0;
     transform: rotate(45deg);
   }
+
+  .language-selector select{
+    width: 10em;
+    display: none;
+  }
       
 
 @media (max-width: 768px) {
@@ -212,6 +222,9 @@ ul {
         font-size: 1.1em;
     }
 
+    .language-selector select{
+        width: 8em;
+      }
 }
 
 @media (max-width: 480px) {
@@ -251,4 +264,8 @@ ul {
         flex-direction: column;
         align-items: center;
     }
+
+    .language-selector select{
+        width: 8em;
+      }
 }

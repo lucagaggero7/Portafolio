@@ -25,6 +25,7 @@
 }
 
 
+
 @media (max-width: 400px) {
   .button-outline {
       padding: 0.45rem 1.2rem; 
@@ -77,9 +78,11 @@
     right: 10px;
   }
 
+
   .hidden {
     display: none;
   }
+
 
 
   
