@@ -17,8 +17,22 @@
 		<link rel="stylesheet" href="assets/css/contacto.css" />
 		<link rel="stylesheet" href="assets/css/buttons.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+		<style>
+			/* Estilo para el selector de idioma */
+			.language-selector {
+			  position: absolute;
+			  top: 10px;
+			  right: 10px;
+			}
+
+			.hidden {
+				display: none;
+			}
+		  </style>
 	</head>
 	<body class="is-preload">
+
 		<!---->
 		<section id="sidebar">
 			<div class="inner">
@@ -28,13 +42,22 @@
 					</li>
 				</ul>
 				<nav>
-					<ul>
+					<ul class="lang es">
 						<li><a href="#intro">Presentación</a></li>
 						<li><a href="#one">Mis Proyectos</a></li>
 						<li><a href="#two">¿Qué me diferencia?</a></li>
 						<li><a href="#four">Educación</a></li>
-						<li><a href="#three">Contactáme</a></li>
-					</ul>
+						<li><a href="#three">Contáctame</a></li>
+					  </ul>
+			  
+					  <!-- Navegación en inglés -->
+					  <ul class="lang en hidden">
+						<li><a href="#intro">About Me</a></li>
+						<li><a href="#one">My Projects</a></li>
+						<li><a href="#two">What Makes Me Unique?</a></li>
+						<li><a href="#four">Education</a></li>
+						<li><a href="#three">Contact Me</a></li>
+					  </ul>
 				</nav>
 				<div class="social-container desktop">
 					<ul class="social-icons">
@@ -66,7 +89,7 @@
 			<div id="wrapper">
 				<section id="intro" class="wrapper style1 fullscreen fade-up">
 					<div class="inner">
-						<h1>
+						<h1 class="lang es">
 							<strong>Hola, soy Stéfano, <br /> un</strong>
 							<span class="presentacion">
 							FullStack .NET Developer
@@ -74,7 +97,13 @@
 						 <br />
 						 muy dedicado
 						</h1>
-						<p class="mas">
+						<h1 class="lang en hidden">
+							<strong>Hi, Im Stefano, <br /> a very dedicated</strong>  <br/>
+							<span class="presentacion">
+								FullStack .NET Developer
+							</span>
+						</h1>
+						<p class="mas lang es">
 							Trabajo con ASP.NET, Blazor WebAssembly, Angular, Entity Framework y SQL Server, entre otras tecnologías, para desarrollar aplicaciones web dinámicas y escalables.
 							<br />
 							¡Te invito a conocer 
@@ -83,10 +112,33 @@
 							</a>
 							y conocer más!
 						</p>
+
+						<p class="mas lang en hidden">
+							I work with .NET, Angular, Blazor. SQL etc.
+							<br />
+							I invite you to meet  
+							<a href="https://www.github.com/lucagaggero7" target="_blank" rel="noopener noreferrer" title="Ver mi perfil de GitHub"> 
+								<span class="highlight">my GitHub profile</span>
+							</a>
+							and know more about!
+						</p>
 						
 						<ul class="actions">
-							<li><a href="#one" class="button-outline scrolly">Más sobre mi</a></li>
+							<li><a href="#one" class="button-outline scrolly lang es">Más sobre mi</a></li>
+							<li><a href="#one" class="button-outline scrolly lang en hidden">More about me</a></li>
+							<li><!-- Selector de idioma -->
+								<div class="language-selector">
+								  <select id="language">
+									<option value="es">Español</option>
+									<option value="en">English</option>
+								  </select>
+								</div>
+							</li>
 						</ul>
+
+
+						<!-- TRADUCIDO -->
+						
 						<div class="social-container mobile">
 							<ul class="social-icons">
 								<li>
@@ -274,5 +326,25 @@
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/rld-nav-icons.js"></script>
 			<script src="assets/js/validacion.js"></script>
+
+			<script>
+				// Función para cambiar el idioma
+				const languageSelector = document.getElementById("language");
+				const elementsEs = document.querySelectorAll(".lang.es");
+				const elementsEn = document.querySelectorAll(".lang.en");
+		  
+				languageSelector.addEventListener("change", (event) => {
+				  const selectedLang = event.target.value;
+		  
+				  // Mostrar/Ocultar contenido según el idioma
+				  if (selectedLang === "es") {
+					elementsEs.forEach((el) => el.classList.remove("hidden"));
+					elementsEn.forEach((el) => el.classList.add("hidden"));
+				  } else {
+					elementsEn.forEach((el) => el.classList.remove("hidden"));
+					elementsEs.forEach((el) => el.classList.add("hidden"));
+				  }
+				});
+			  </script>
 	</body>
 </html>
