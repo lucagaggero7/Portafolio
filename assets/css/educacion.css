@@ -25,8 +25,15 @@
 
 #four .education-item p {
   font-size: 0.9rem;
-  color: #B0B0B0;
-  margin-bottom: 20px;
+  margin: 0 ;
+}
+
+.en-curso {
+  color: rgb(255, 115, 0);
+}
+
+.finalizado{
+  color: rgb(3, 212, 3);
 }
 
 #four .actions {
