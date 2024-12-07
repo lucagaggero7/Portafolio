@@ -34,11 +34,11 @@
 }
 
 .card-footer {
-  margin-top: 1rem;  /* Ensures the footer stays at the bottom */
+  margin-top: 1rem; 
   margin-bottom: 2rem;
 }
 
-/* Botones de seccion proyectos en home */
+/* Botones de proyectos en cards */
 .project-button-container {
     text-align: left;
     margin-top: 3rem;
@@ -46,8 +46,8 @@
   }
   
   .project-button {
-    margin-top: 5px; /* Gap de 5px entre el contenido y el botón */
-    margin-bottom: 0; /* No hay margen abajo, el botón estará pegado al fondo */
+    margin-top: 5px;
+    margin-bottom: 0; 
     padding: 0.75rem 1.5rem;
     font-size: 0.9rem;
     font-weight: bold;
@@ -56,8 +56,8 @@
     background: rgba(255, 255, 255, 0.1); 
     border-radius: 4px;
     transition: background-color 0.3s ease;
-    align-self: flex-end; /* Alinea el botón al fondo de la tarjeta */
-    margin-bottom: 1rem; /* Gap de 1 rem con el borde inferior */
+    align-self: flex-end; 
+    margin-bottom: 1rem; 
   }
   
   .project-button:hover {
@@ -68,6 +68,17 @@
     font-size: 1rem;
     padding: 1rem 2rem;
     margin-top: -1rem;
+  }
+
+  /* Selector de lenguaje */
+  .language-selector {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+
+  .hidden {
+    display: none;
   }
 
 
