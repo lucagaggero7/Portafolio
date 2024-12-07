@@ -1,65 +1,156 @@
 <!DOCTYPE HTML>
 <html>
-	<head>
-		<title>Portafolio de Stefano Gaggero</title>
-		<link rel="icon" href="/favicon.ico" type="image/x-icon">
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<meta name="description" content="Portafolio profesional de Stefano Gaggero, FullStack .NET Developer. Descubre mis proyectos, habilidades y cómo contactarme.">
-		<meta name="color-scheme" content="light">
-		<!--CSS-->
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="assets/css/navicons.css" />
-		<link rel="stylesheet" href="assets/css/section-one.css" />
-		<link rel="stylesheet" href="assets/css/home.css" />
-		<link rel="stylesheet" href="assets/css/home-proyectos.css" />
-		<link rel="stylesheet" href="assets/css/educacion.css" />
-		<link rel="stylesheet" href="assets/css/contacto.css" />
-		<link rel="stylesheet" href="assets/css/buttons.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 
-		<style>
-			/* Estilo para el selector de idioma */
-			.language-selector {
-			  position: absolute;
-			  top: 10px;
-			  right: 10px;
-			}
+<head>
+	<title>Portafolio de Stefano Gaggero</title>
+	<link rel="icon" href="/favicon.ico" type="image/x-icon">
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="description"
+		content="Portafolio profesional de Stefano Gaggero, FullStack .NET Developer. Descubre mis proyectos, habilidades y cómo contactarme.">
+	<meta name="color-scheme" content="light">
+	<!--CSS-->
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="assets/css/navicons.css" />
+	<link rel="stylesheet" href="assets/css/section-one.css" />
+	<link rel="stylesheet" href="assets/css/home.css" />
+	<link rel="stylesheet" href="assets/css/proyectos-cards.css" />
+	<link rel="stylesheet" href="assets/css/educacion.css" />
+	<link rel="stylesheet" href="assets/css/contacto.css" />
+	<link rel="stylesheet" href="assets/css/buttons.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
 
-			.hidden {
-				display: none;
-			}
-		  </style>
-	</head>
-	<body class="is-preload">
+	<style>
+		/* Estilo para el selector de idioma */
+		.language-selector {
+			position: absolute;
+			top: 10px;
+			right: 10px;
+		}
 
-		<!---->
-		<section id="sidebar">
-			<div class="inner">
-				<ul class="logo-icons">
+		.hidden {
+			display: none;
+		}
+	</style>
+</head>
+
+<body class="is-preload">
+
+	<!---->
+	<section id="sidebar">
+		<div class="inner">
+			<ul class="logo-icons">
+				<li>
+					<img src="logo.png" alt="Logo" style="height: 40px; width: auto;">
+				</li>
+			</ul>
+			<nav>
+				<ul class="lang es">
+					<li><a href="#intro">Presentación</a></li>
+					<li><a href="#one">Mis Proyectos</a></li>
+					<li><a href="#two">¿Qué me diferencia?</a></li>
+					<li><a href="#four">Educación</a></li>
+					<li><a href="#three">Contáctame</a></li>
+				</ul>
+
+				<!-- Navegación en inglés -->
+				<ul class="lang en hidden">
+					<li><a href="#intro">About Me</a></li>
+					<li><a href="#one">My Projects</a></li>
+					<li><a href="#two">What Makes Me Unique?</a></li>
+					<li><a href="#four">Education</a></li>
+					<li><a href="#three">Contact Me</a></li>
+				</ul>
+			</nav>
+			<div class="social-container desktop">
+				<ul class="social-icons">
 					<li>
-						<img src="logo.png" alt="Logo" style="height: 40px; width: auto;">
+						<a href="https://github.com/lucagaggero7" class="icon brands fa-github" target="_blank">
+							<span class="label">GitHub</span>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.instagram.com/stefanogaggero_/" class="icon brands fa-instagram"
+							target="_blank">
+							<span class="label">Instagram</span>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.linkedin.com/in/stefano-gaggero-508a09183/"
+							class="icon brands fa-linkedin-in" target="_blank">
+							<span class="label">LinkedIn</span>
+						</a>
+					</li>
+					<li>
+						<a href="https://wa.me/543572403100" class="icon brands fa-whatsapp" target="_blank">
+							<span class="label">WhatsApp</span>
+						</a>
 					</li>
 				</ul>
-				<nav>
-					<ul class="lang es">
-						<li><a href="#intro">Presentación</a></li>
-						<li><a href="#one">Mis Proyectos</a></li>
-						<li><a href="#two">¿Qué me diferencia?</a></li>
-						<li><a href="#four">Educación</a></li>
-						<li><a href="#three">Contáctame</a></li>
-					  </ul>
-			  
-					  <!-- Navegación en inglés -->
-					  <ul class="lang en hidden">
-						<li><a href="#intro">About Me</a></li>
-						<li><a href="#one">My Projects</a></li>
-						<li><a href="#two">What Makes Me Unique?</a></li>
-						<li><a href="#four">Education</a></li>
-						<li><a href="#three">Contact Me</a></li>
-					  </ul>
-				</nav>
-				<div class="social-container desktop">
+			</div>
+		</div>
+	</section>
+	<!---->
+	<div id="wrapper">
+		<section id="intro" class="wrapper style1 fullscreen fade-up">
+			<div class="inner">
+				<h1 class="lang es">
+					<strong>Hola, soy Stéfano, <br /> un</strong>
+					<span class="presentacion">
+						FullStack .NET Developer
+					</span>
+					<br />
+					muy dedicado
+				</h1>
+				<h1 class="lang en hidden">
+					<strong>Hi, Im Stefano, <br /> a very dedicated</strong> <br />
+					<span class="presentacion">
+						FullStack .NET Developer
+					</span>
+				</h1>
+				<p class="mas lang es">
+					Trabajo con ASP.NET, Blazor WebAssembly, Angular, Entity Framework y SQL Server, entre otras
+					tecnologías, para desarrollar aplicaciones web dinámicas y escalables.
+					<br />
+					¡Te invito a conocer
+					<a href="https://www.github.com/lucagaggero7" target="_blank" rel="noopener noreferrer"
+						title="Ver mi perfil de GitHub">
+						<span class="highlight">mi perfil de GitHub</span>
+					</a>
+					y conocer más!
+				</p>
+
+				<p class="mas lang en hidden">
+					I work with ASP.NET, Blazor WebAssembly, Angular, Entity Framework, and SQL Server, among other
+					technologies, to develop dynamic and scalable web applications.
+					<br />
+					I invite you to check out
+					<a href="https://www.github.com/lucagaggero7" target="_blank" rel="noopener noreferrer"
+						title="Ver mi perfil de GitHub">
+						<span class="highlight">my GitHub profile</span>
+					</a>
+					and learn more!
+				</p>
+
+				<ul class="actions">
+					<li><a href="#one" class="button-outline scrolly lang es">Más sobre mi</a></li>
+					<li><a href="#one" class="button-outline scrolly lang en hidden">More about me</a></li>
+					<li><!-- Selector de idioma -->
+						<div class="language-selector">
+							<select id="language">
+								<option value="es">Español</option>
+								<option value="en">English</option>
+							</select>
+						</div>
+					</li>
+				</ul>
+
+
+				<!-- TRADUCIDO HASTA ACA-->
+
+				<div class="social-container mobile">
 					<ul class="social-icons">
 						<li>
 							<a href="https://github.com/lucagaggero7" class="icon brands fa-github" target="_blank">
@@ -67,12 +158,14 @@
 							</a>
 						</li>
 						<li>
-							<a href="https://www.instagram.com/stefanogaggero_/" class="icon brands fa-instagram" target="_blank">
+							<a href="https://www.instagram.com/stefanogaggero_/" class="icon brands fa-instagram"
+								target="_blank">
 								<span class="label">Instagram</span>
 							</a>
 						</li>
 						<li>
-							<a href="https://www.linkedin.com/in/stefano-gaggero-508a09183/" class="icon brands fa-linkedin-in" target="_blank">
+							<a href="https://www.linkedin.com/in/stefano-gaggero-508a09183/"
+								class="icon brands fa-linkedin-in" target="_blank">
 								<span class="label">LinkedIn</span>
 							</a>
 						</li>
@@ -85,266 +178,233 @@
 				</div>
 			</div>
 		</section>
-			<!---->
-			<div id="wrapper">
-				<section id="intro" class="wrapper style1 fullscreen fade-up">
-					<div class="inner">
-						<h1 class="lang es">
-							<strong>Hola, soy Stéfano, <br /> un</strong>
-							<span class="presentacion">
-							FullStack .NET Developer
-							</span>
-						 <br />
-						 muy dedicado
-						</h1>
-						<h1 class="lang en hidden">
-							<strong>Hi, Im Stefano, <br /> a very dedicated</strong>  <br/>
-							<span class="presentacion">
-								FullStack .NET Developer
-							</span>
-						</h1>
-						<p class="mas lang es">
-							Trabajo con ASP.NET, Blazor WebAssembly, Angular, Entity Framework y SQL Server, entre otras tecnologías, para desarrollar aplicaciones web dinámicas y escalables.
-							<br />
-							¡Te invito a conocer 
-							<a href="https://www.github.com/lucagaggero7" target="_blank" rel="noopener noreferrer" title="Ver mi perfil de GitHub"> 
-								<span class="highlight">mi perfil de GitHub</span>
-							</a>
-							y conocer más!
-						</p>
+		<!---->
+		<section id="one" class="wrapper style2">
+			<div class="inner">
+				<h1 class="project-title lang es">PROYECTOS DESTACADOS</h1>
+				<h1 class="project-title lang en hidden">HIGHLIGHTED PROJECTS</h1>
+				<div class="wrapper style2 project-grid-container">
 
-						<p class="mas lang en hidden">
-							I work with ASP.NET, Blazor WebAssembly, Angular, Entity Framework, and SQL Server, among other technologies, to develop dynamic and scalable web applications.
-							<br />
-							I invite you to check out 
-							<a href="https://www.github.com/lucagaggero7" target="_blank" rel="noopener noreferrer" title="Ver mi perfil de GitHub"> 
-								<span class="highlight">my GitHub profile</span>
-							</a>
-							and learn more!
-						</p>
-						
-						<ul class="actions">
-							<li><a href="#one" class="button-outline scrolly lang es">Más sobre mi</a></li>
-							<li><a href="#one" class="button-outline scrolly lang en hidden">More about me</a></li>
-							<li><!-- Selector de idioma -->
-								<div class="language-selector">
-								  <select id="language">
-									<option value="es">Español</option>
-									<option value="en">English</option>
-								  </select>
-								</div>
-							</li>
-						</ul>
-
-
-						<!-- TRADUCIDO -->
-						
-						<div class="social-container mobile">
-							<ul class="social-icons">
-								<li>
-									<a href="https://github.com/lucagaggero7" class="icon brands fa-github" target="_blank">
-										<span class="label">GitHub</span>
-									</a>
-								</li>
-								<li>
-									<a href="https://www.instagram.com/stefanogaggero_/" class="icon brands fa-instagram" target="_blank">
-										<span class="label">Instagram</span>
-									</a>
-								</li>
-								<li>
-									<a href="https://www.linkedin.com/in/stefano-gaggero-508a09183/" class="icon brands fa-linkedin-in" target="_blank">
-										<span class="label">LinkedIn</span>
-									</a>
-								</li>
-								<li>
-									<a href="https://wa.me/543572403100" class="icon brands fa-whatsapp" target="_blank">
-										<span class="label">WhatsApp</span>
-									</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</section>
-				<!---->
-					<section id="one" class="wrapper style2">
-						<div class="inner">
-							<h1 class="project-title">PROYECTOS DESTACADOS</h1>
-						<div class="wrapper style2 project-grid-container">
-						  <div class="project-card">
+					<div class="project-card">
 							<img src="images/pic01.png" alt="Zetta Servicios" class="project-card-image" />
 							<div class="project-card-content">
-							  <h3>Zetta Servicios</h3>
-							  <p>Proyecto de gestion, seguimiento y mantenimiento para gasista matriculado. Realizado individualmente usando enfoque Database First.</p>
-							  <a href="pages/proyectos/zetta-servicios.html" class="project-button">Ver detalles</a>
+								<h3 class="lang es">Zetta Servicios</h3>
+								<h3 class="lang en hidden">Zetta Servicios</h3>
+								<p class="lang es">Proyecto de gestion, seguimiento y mantenimiento para gasista
+									matriculado. Realizado individualmente usando enfoque Database First.</p>
+								<p class="lang en hidden">Management, tracking, and maintenance project for a licensed
+									gas technician. Developed individually using a Database First approach.</p>
 							</div>
-						  </div>
-						  <div class="project-card">
-							<img src="images/pic17.png" alt="Tienda Celulares" class="project-card-image" />
-							<div class="project-card-content">
-							  <h3>Tienda Celulares</h3>
-							  <p>Proyecto de tienda de celulares para implementar .NET 9 con Angular 19. Realizado siguiendo el curso de Felipe Gavilán.</p>
-							  <a href="pages/proyectos/tienda-celulares.html" class="project-button">Ver detalles</a>
-							</div>
-						  </div>
-						  <div class="project-card">
-							<img src="images/pic07.png" alt="Proyecto 2024" class="project-card-image" />
-							<div class="project-card-content">
-							  <h3>CRUD Empleados</h3>
-							  <p>Proyecto de gestion de empleados para poner a prueba mis habilidades en ASP.NET WebForms, utilizando enfoque Databse First.</p>
-							  <a href="pages/proyectos/crud-empleados.html" class="project-button">Ver detalles</a>
-							</div>
-						  </div>
+						<div class="card-footer">
+								<a href="pages/proyectos/zetta-servicios.html" class="project-button lang es">Ver
+									detalles</a>
+								<a href="pages/proyectos/zetta-servicios.html"
+									class="project-button lang en hidden">View details</a>
 						</div>
-						<ul class="project-button-container">
-							<li><a href="pages/proyectos.html" class="button-outline">Conoce todos mis proyectos</a></li>
-						</ul>
 					</div>
+
+					<div class="project-card">
+						<img src="images/pic17.png" alt="Tienda Celulares" class="project-card-image" />
+						<div class="project-card-content">
+							<h3 class="lang es">Tienda Celulares</h3>
+							<h3 class="lang en hidden">Cellphone Store</h3>
+							<p class="lang es">Proyecto de tienda de celulares para implementar .NET 9 con Angular 19.
+								Realizado siguiendo el curso de Felipe Gavilán.</p>
+							<p class="lang en hidden">Cell phone store project to implement .NET 9 with Angular 19.
+								Developed while following Felipe Gavilán's course.</p>
+						</div>
+						<div class="card-footer">
+							<a href="pages/proyectos/tienda-celulares.html" class="project-button lang es">Ver
+								detalles</a>
+							<a href="pages/proyectos/tienda-celulares.html" class="project-button lang en hidden">View
+								details</a>
+							</div>
+					</div>
+
+					<div class="project-card">
+						<img src="images/pic07.png" alt="Proyecto 2024" class="project-card-image" />
+						<div class="project-card-content">
+							<h3 class="lang es">ABM Empleados</h3>
+							<h3 class="lang en hidden">Employees CRUD</h3>
+							<p class="lang es">Proyecto de gestion de empleados para poner a prueba mis habilidades en
+								ASP.NET WebForms, utilizando enfoque Databse First.</p>
+							<p class="lang en hidden">Employee management project to test my skills in ASP.NET WebForms,
+								using a Database First approach.</p>
+						</div>
+						<div class="card-footer">
+							<a href="pages/proyectos/crud-empleados.html" class="project-button lang es">Ver
+								detalles</a>
+							<a href="pages/proyectos/crud-empleados.html" class="project-button lang en hidden">View
+								details</a>
+								</div>
+					</div>
+
+				</div>
+				<ul class="project-button-container">
+					<li><a href="pages/proyectos.html" class="button-outline lang es">Conoce todos mis proyectos</a></li>
+					<li><a href="pages/proyectos.html" class="button-outline lang en hidden">View all my projects</a></li>
+				</ul>
+			</div>
+		</section>
+		<!---->
+		<section id="two" class="wrapper style3 fade-up">
+			<div class="inner">
+				<h2 class="diferencia-title">¿QUÉ ME <span class="neon-text">DIFERENCIA</span> DEL RESTO?</h2>
+				<div class="features">
+					<section>
+						<span class="icon solid major fa-code"></span>
+						<h3>Codigo limpio y escalable</h3>
+						<p>Un codigo facil de leer facilita la colaboración y reduce la deuda tecnica a mi equipo de
+							trabajo.</p>
 					</section>
-					<!---->
-					<section id="two" class="wrapper style3 fade-up">
-						<div class="inner">
-							<h2 class="diferencia-title">¿QUÉ ME <span class="neon-text">DIFERENCIA</span> DEL RESTO?</h2>
-							<div class="features">
-								<section>
-									<span class="icon solid major fa-code"></span>
-									<h3>Codigo limpio y escalable</h3>
-									<p>Un codigo facil de leer facilita la colaboración y reduce la deuda tecnica a mi equipo de trabajo.</p>
-								</section>
-								<section>  
-									<span class="icon solid major fa-cog"></span>  
-									<h3>Vanguardia</h3>  
-									<p>Me destaco por siempre aprender las últimas tecnologías, como .NET 9 y Blazor WebAssembly.</p>  
-								  </section>  
-								  <section>  
-									<span class="icon solid major fa-desktop"></span>  
-									<h3>Diseño Responsivo</h3>  
-									<p>Diseño y adapto frontends para teléfonos y computadoras, asegurando que funcionen en cualquier dispositivo.</p>  
-								  </section>  
-								  <section>  
-									<span class="icon solid major fa-link"></span>  
-									<h3>API REST</h3>  
-									<p>Hago conexiones cliente-servidor eficientes y escalables, agregando controllers y repositorios sin afectar la base de datos.</p>  
-								  </section>  
+					<section>
+						<span class="icon solid major fa-cog"></span>
+						<h3>Vanguardia</h3>
+						<p>Me destaco por siempre aprender las últimas tecnologías, como .NET 9 y Blazor WebAssembly.
+						</p>
+					</section>
+					<section>
+						<span class="icon solid major fa-desktop"></span>
+						<h3>Diseño Responsivo</h3>
+						<p>Diseño y adapto frontends para teléfonos y computadoras, asegurando que funcionen en
+							cualquier dispositivo.</p>
+					</section>
+					<section>
+						<span class="icon solid major fa-link"></span>
+						<h3>API REST</h3>
+						<p>Hago conexiones cliente-servidor eficientes y escalables, agregando controllers y
+							repositorios sin afectar la base de datos.</p>
+					</section>
+				</div>
+				<ul class="actions">
+					<li><a href="pages/tecnologias.html" class="button-outline">Conoce mi tech stack</a></li>
+				</ul>
+			</div>
+		</section>
+		<!--FOUR-->
+		<section id="four" class="wrapper style3 fade-up">
+			<div class="inner">
+				<h2 class="educacion-title">Educación</h2>
+				<div class="education-item">
+					<h2>Tecnicatura Superior en Desarrollo de Software</h2>
+					<h3>Instituto Técnico Superior Córdoba</h3>
+					<p>Terciario en curso</p>
+				</div>
+				<div class="education-item">
+					<h2>Curso de Programador</h2>
+					<h3>Instituto Técnico Superior Córdoba</h3>
+					<p>Certificado de formacion profesional</p>
+				</div>
+				<div class="education-item">
+					<h2>Bachiller en Ciencias Naturales</h2>
+					<h3>Colegio Parroquial San Luis Gonzaga</h3>
+					<p>Titulo secundario con certificado analitico</p>
+				</div>
+				<ul class="actions">
+					<li><a href="https://drive.google.com/file/d/1ULA8iOJnbGhLGR7VmRic0D_PHt3kyYw0/view?usp=sharing"
+							class="button-outline" target="_blank">Ver curriculum</a></li>
+					<li><a href="assets/docs/CV.pdf" class="button-outline" download>Descargar curriculum</a></li>
+					<li><a href="https://drive.google.com/file/d/1WPn3ro5JqtKkiekOUbAioyU_f4kbI5K7/view?usp=sharing"
+							class="button-outline" target="_blank">Titulos y certificados</a></li>
+				</ul>
+			</div>
+		</section>
+		<!---->
+		<section id="three" class="wrapper style1 fade-up">
+			<div class="inner">
+				<h2>Contactáme</h2>
+				<div class="split style1">
+					<section>
+						<!---->
+						<form id="miFormulario" action="https://getform.io/f/akkkpela" method="POST" target="_blank"
+							onsubmit="return validarFormulario()">
+							<div class="fields">
+								<input type="hidden" name="_gotcha" style="display:none !important">
+								<div class="field half">
+									<label for="name">Nombre</label>
+									<input type="text" name="name" id="name" required />
+								</div>
+								<div class="field half">
+									<label for="email">Correo</label>
+									<input type="email" name="email" id="email" required />
+								</div>
+								<div class="field">
+									<label for="message">Mensaje</label>
+									<textarea name="message" id="message" rows="5" required></textarea>
+								</div>
 							</div>
 							<ul class="actions">
-								<li><a href="pages/tecnologias.html" class="button-outline">Conoce mi tech stack</a></li>
+								<li><button type="submit" class="button-outline submit">Enviar Mensaje</button></li>
 							</ul>
-						</div>
+						</form>
 					</section>
-					<!--FOUR-->
-					<section id="four" class="wrapper style3 fade-up">
-						<div class="inner">
-						  <h2 class="educacion-title">Educación</h2>
-						  <div class="education-item">
-							<h2>Tecnicatura Superior en Desarrollo de Software</h2>
-							<h3>Instituto Técnico Superior Córdoba</h3>
-							<p>Terciario en curso</p>
-						  </div>
-						  <div class="education-item">
-							<h2>Curso de Programador</h2>
-							<h3>Instituto Técnico Superior Córdoba</h3>
-							<p>Certificado de formacion profesional</p>
-						  </div>
-						  <div class="education-item">
-							<h2>Bachiller en Ciencias Naturales</h2>
-							<h3>Colegio Parroquial San Luis Gonzaga</h3>
-							<p>Titulo secundario con certificado analitico</p>
-						  </div>
-						  <ul class="actions">
-							<li><a href="https://drive.google.com/file/d/1ULA8iOJnbGhLGR7VmRic0D_PHt3kyYw0/view?usp=sharing" class="button-outline" target="_blank">Ver curriculum</a></li>
-							<li><a href="assets/docs/CV.pdf" class="button-outline" download>Descargar curriculum</a></li>			
-							<li><a href="https://drive.google.com/file/d/1WPn3ro5JqtKkiekOUbAioyU_f4kbI5K7/view?usp=sharing" class="button-outline" target="_blank">Titulos y certificados</a></li>				
-						  </ul>
-						</div>
-					  </section>
-					<!---->
-					<section id="three" class="wrapper style1 fade-up">
-						<div class="inner">
-							<h2>Contactáme</h2>
-							<div class="split style1">
-								<section>
-									<!---->
-									<form id="miFormulario" action="https://getform.io/f/akkkpela" method="POST" target="_blank" onsubmit="return validarFormulario()">
-										<div class="fields">
-											<input type="hidden" name="_gotcha" style="display:none !important">
-											<div class="field half">
-												<label for="name">Nombre</label>
-												<input type="text" name="name" id="name" required />
-											</div>
-											<div class="field half">
-												<label for="email">Correo</label>
-												<input type="email" name="email" id="email" required />
-											</div>
-											<div class="field">
-												<label for="message">Mensaje</label>
-												<textarea name="message" id="message" rows="5" required></textarea>
-											</div>
-										</div>
-										<ul class="actions">
-											<li><button type="submit" class="button-outline submit">Enviar Mensaje</button></li>
-										</ul>
-									</form>
-								</section>
-								<section>
-									<ul class="contact">
-										<li>
-											<h3>Dirección</h3>
-											<span>Ayacucho 437<br />
-											Cordoba Capital, Cordoba, X5000<br />
-											Argentina</span>
-										</li>
-										<li>
-											<h3>Email</h3>
-											<a href="mailto:stefanolucagaggero@gmail.com">stefanolucagaggero@gmail.com</a>
-										</li>
-										<li>
-											<h3>Telefono</h3>
-											<span>+54(3572)403100</span>
-										</li>
-										<li>
-											<h3>Social</h3>
-											<ul class="icons">
-												<li><a href="https://github.com/lucagaggero7" class="icon brands fa-github" target="_blank"><span class="label">GitHub</span></a></li>
-												<li><a href="https://www.instagram.com/stefanogaggero_/" class="icon brands fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
-												<li><a href="https://www.linkedin.com/in/stefano-gaggero-508a09183/" class="icon brands fa-linkedin-in" target="_blank"><span class="label">LinkedIn</span></a></li>
-												<li><a href="https://wa.me/543572403100" class="icon brands fa-whatsapp" target="_blank"><span class="label">WhatsApp</span></a></li>
-											</ul>
-										</li>
-									</ul>
-								</section>
-							</div>
-						</div>
+					<section>
+						<ul class="contact">
+							<li>
+								<h3>Dirección</h3>
+								<span>Ayacucho 437<br />
+									Cordoba Capital, Cordoba, X5000<br />
+									Argentina</span>
+							</li>
+							<li>
+								<h3>Email</h3>
+								<a href="mailto:stefanolucagaggero@gmail.com">stefanolucagaggero@gmail.com</a>
+							</li>
+							<li>
+								<h3>Telefono</h3>
+								<span>+54(3572)403100</span>
+							</li>
+							<li>
+								<h3>Social</h3>
+								<ul class="icons">
+									<li><a href="https://github.com/lucagaggero7" class="icon brands fa-github"
+											target="_blank"><span class="label">GitHub</span></a></li>
+									<li><a href="https://www.instagram.com/stefanogaggero_/"
+											class="icon brands fa-instagram" target="_blank"><span
+												class="label">Instagram</span></a></li>
+									<li><a href="https://www.linkedin.com/in/stefano-gaggero-508a09183/"
+											class="icon brands fa-linkedin-in" target="_blank"><span
+												class="label">LinkedIn</span></a></li>
+									<li><a href="https://wa.me/543572403100" class="icon brands fa-whatsapp"
+											target="_blank"><span class="label">WhatsApp</span></a></li>
+								</ul>
+							</li>
+						</ul>
 					</section>
+				</div>
 			</div>
-		<!--JS-->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-			<script src="assets/js/rld-nav-icons.js"></script>
-			<script src="assets/js/validacion.js"></script>
+		</section>
+	</div>
+	<!--JS-->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script src="assets/js/rld-nav-icons.js"></script>
+	<script src="assets/js/validacion.js"></script>
 
-			<script>
-				// Función para cambiar el idioma
-				const languageSelector = document.getElementById("language");
-				const elementsEs = document.querySelectorAll(".lang.es");
-				const elementsEn = document.querySelectorAll(".lang.en");
-		  
-				languageSelector.addEventListener("change", (event) => {
-				  const selectedLang = event.target.value;
-		  
-				  // Mostrar/Ocultar contenido según el idioma
-				  if (selectedLang === "es") {
-					elementsEs.forEach((el) => el.classList.remove("hidden"));
-					elementsEn.forEach((el) => el.classList.add("hidden"));
-				  } else {
-					elementsEn.forEach((el) => el.classList.remove("hidden"));
-					elementsEs.forEach((el) => el.classList.add("hidden"));
-				  }
-				});
-			  </script>
-	</body>
+	<script>
+		// Función para cambiar el idioma
+		const languageSelector = document.getElementById("language");
+		const elementsEs = document.querySelectorAll(".lang.es");
+		const elementsEn = document.querySelectorAll(".lang.en");
+
+		languageSelector.addEventListener("change", (event) => {
+			const selectedLang = event.target.value;
+
+			// Mostrar/Ocultar contenido según el idioma
+			if (selectedLang === "es") {
+				elementsEs.forEach((el) => el.classList.remove("hidden"));
+				elementsEn.forEach((el) => el.classList.add("hidden"));
+			} else {
+				elementsEn.forEach((el) => el.classList.remove("hidden"));
+				elementsEs.forEach((el) => el.classList.add("hidden"));
+			}
+		});
+	</script>
+</body>
+
 </html>
