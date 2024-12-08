@@ -152,7 +152,7 @@ h1.major {
 @media (max-width: 768px) {
 
   .wrapper{
-    padding: 1rem;
+    padding: 2rem;
   }
 
   .flex-container {
@@ -181,4 +181,14 @@ h1.major {
   .swiper-button-prev:after {
       font-size: 16px;
   }
+
+ .language-selector {
+   left: 1rem;
+   margin-top: 3rem;
+ }
+
+ .social-icons{
+  margin: -10px 0 0px !important;
+ }
+
 }

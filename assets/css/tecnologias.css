@@ -178,6 +178,11 @@ ul {
       
 
 @media (max-width: 768px) {
+    
+    #footer .inner {
+        padding: 3rem !important;
+    }
+
     .comparison-container {
         flex-direction: row;
         justify-content: space-evenly;
@@ -217,12 +222,22 @@ ul {
         font-size: 1.1em;
     }
 
-    .language-selector select{
-        width: 8em;
+    .language-selector{
+        width: 10em;
+        font-size: 10pt;
+      }
+     
+      .social-icons{
+       margin: -10px 0 0px !important;
       }
 }
 
 @media (max-width: 480px) {
+
+    #footer .inner {
+        padding: 3rem !important;
+    }
+
     .comparison-container {
         flex-direction: row;
         align-items: center;
@@ -260,7 +275,14 @@ ul {
         align-items: center;
     }
 
-    .language-selector select{
+    .language-selector{
         width: 8em;
+        left: 1rem;
+        margin-top: 3rem;
+        right: 0 !important;
+      }
+     
+      .social-icons{
+       margin: -10px 0 0px !important;
       }
 }
