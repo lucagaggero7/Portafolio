@@ -8,36 +8,61 @@
     <link rel="stylesheet" href="/assets/css/main.css" />
     <link rel="stylesheet" href="/assets/css/navicons.css" />
     <link rel="stylesheet" href="/assets/css/proyectos.css" />
+    <link rel="stylesheet" href="/assets/css/buttons.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <noscript><link rel="stylesheet" href="/assets/css/noscript.css" /></noscript>
   </head>
   <!---->
   <body class="is-preload">
-    <header id="header">
+    <header id="header" class="lang es">
       <a href="/pages/proyectos.html" class="title">Proyectos</a>
       <nav>
         <ul>
-          <li><a href="/index.html">Home</a></li>
-          <li><a href="/pages/proyectos/zetta-servicios.html" >Zetta Servicios</a></li>
+          <li><a href="/index.html">Inicio</a></li>
+          <li><a href="/pages/proyectos/zetta-servicios.html">Zetta Servicios</a></li>
           <li><a href="/pages/proyectos/innobra.html" class="active">INNOBRA</a></li>
           <li><a href="/pages/proyectos/proyecto-inicio.html">Proyecto Inicio</a></li>
-          <li><a href="/pages/proyectos/crud-empleados.html">Crud Empleados</a></li>
+          <li><a href="/pages/proyectos/crud-empleados.html">CRUD Empleados</a></li>
           <li><a href="/pages/proyectos/final-prog2.html" >Final-Programacion II</a></li>
           <li><a href="/pages/proyectos/tienda-celulares.html" >Tienda Celulares</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <header id="header" class="lang en hidden">
+      <a href="/pages/proyectos.html" class="title">Projects</a>
+      <nav>
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/pages/proyectos/zetta-servicios.html">Zetta Services</a></li>
+          <li><a href="/pages/proyectos/innobra.html" class="active">INNOBRA</a></li>
+          <li><a href="/pages/proyectos/proyecto-inicio.html">Project 2024</a></li>
+          <li><a href="/pages/proyectos/crud-empleados.html">Employees CRUD</a></li>
+          <li><a href="/pages/proyectos/final-prog2.html" >Final-Programming II</a></li>
+          <li><a href="/pages/proyectos/tienda-celulares.html" >Electronics Store</a></li>
         </ul>
       </nav>
     </header>
     <!---->
     <section id="main" class="wrapper">
       <div class="inner">
-        <h1 class="major"> <a href="https://github.com/Gabriel0511/INNOBRA_ASP" class="icon brands fa-github" target="_blank">
+        <h1 class="major lang es"> <a href="https://github.com/Gabriel0511/INNOBRA_ASP" class="icon brands fa-github" target="_blank">
           <span class="label">GitHub</span>
         </a>Proyecto INNOBRA</h1>
+
+        <h1 class="major lang en hidden"> <a href="https://github.com/Gabriel0511/INNOBRA_ASP" class="icon brands fa-github" target="_blank">
+          <span class="label">GitHub</span>
+        </a>Project: "INNOBRA"</h1>
+
         <div class="flex-container">
           <!---->
           <div class="card">
-            <p>
+            <p class="lang es">
 				En este proyecto grupal de 4 personas para la materia Práctica Profesionalizante I, desarrollamos una aplicación web de gestión de obras siguiendo los requisitos del profesor como cliente. Trabajamos con la metodología ágil Scrumban, dividiendo 2 casos de uso por integrante. Una vez completados la base de datos (SQL con Entity Framework), el servidor (ASP.NET 8) y las páginas para los CRUD de cada entidad, integramos todo en solo 2 componentes razor pages.
+            </p>
+
+            <p class="lang en hidden">
+              In this group project of 4 people for the Practical Professional Course I, we developed a web application for project management following the professor's requirements as the client. We worked with the agile methodology Scrumban, dividing 2 use cases per member. Once the database (SQL with Entity Framework), the server (ASP.NET 8), and the pages for the CRUD of each entity were completed, we integrated everything into just 2 Razor Pages components.
             </p>
           </div>
           <!---->
@@ -62,30 +87,40 @@
     <!---->
     <footer id="footer" class="wrapper alt">
       <div class="inner">
-        <ul class="social-icons">
-          <li>
-            <a href="https://github.com/lucagaggero7" class="icon brands fa-github" target="_blank">
-              <span class="label">GitHub</span>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/stefanogaggero_/" class="icon brands fa-instagram" target="_blank">
-              <span class="label">Instagram</span>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/stefano-gaggero-508a09183/" class="icon brands fa-linkedin-in" target="_blank">
-              <span class="label">LinkedIn</span>
-            </a>
-          </li>
-          <li>
-            <a href="https://wa.me/543572403100" class="icon brands fa-whatsapp" target="_blank">
-              <span class="label">WhatsApp</span>
-            </a>
-          </li>
-        </ul>
+          <ul class="social-icons">
+              <li>
+                  <a href="https://github.com/lucagaggero7" class="icon brands fa-github" target="_blank">
+                      <span class="label">GitHub</span>
+                  </a>
+              </li>
+              <li>
+                  <a href="https://www.instagram.com/stefanogaggero_/" class="icon brands fa-instagram" target="_blank">
+                      <span class="label">Instagram</span>
+                  </a>
+              </li>
+              <li>
+                  <a href="https://www.linkedin.com/in/stefano-gaggero-508a09183/" class="icon brands fa-linkedin-in" target="_blank">
+                      <span class="label">LinkedIn</span>
+                  </a>
+              </li>
+              <li>
+                  <a href="https://wa.me/543572403100" class="icon brands fa-whatsapp" target="_blank">
+                      <span class="label">WhatsApp</span>
+                  </a>
+              </li>
+          </ul>
+          <ul class="actions">
+              <li ><!-- Selector de idioma -->
+                  <div class="language-selector">
+                      <select id="language">
+                          <option value="es">Español</option>
+                          <option value="en">English</option>
+                      </select>
+                  </div>
+              </li>
+          </ul>
       </div>
-    </footer>
+  </footer>
     <!-- JS -->
     <script src="/assets/js/jquery.min.js"></script>
     <script src="/assets/js/jquery.scrollex.min.js"></script>
@@ -96,5 +131,6 @@
     <script src="/assets/js/main.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="/assets/js/swiper.js"></script>
+    <script src="/assets/js/language-selector.js"></script>
   </body>
 </html>
