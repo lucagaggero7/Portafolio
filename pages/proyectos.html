@@ -14,18 +14,30 @@
     <noscript><link rel="stylesheet" href="/assets/css/noscript.css" /></noscript>
   </head>
   <body class="is-preload">
-    <header id="header">
+
+    <header id="header" class="lang es">
       <a href="/pages/proyectos.html" class="title">Proyectos</a>
       <nav>
         <ul>
-          <li><a href="/index.html">Home</a></li>
+          <li><a href="/index.html">Inicio</a></li>
           <li><a href="/pages/tecnologias.html" >Tecnologías</a></li>
           <li><a href="/pages/proyectos.html" class="active">Proyectos</a></li>
         </ul>
       </nav>
     </header>
+
+    <header id="header" class="lang en hidden">
+      <a href="/pages/proyectos.html" class="title">Projects</a>
+      <nav>
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/pages/tecnologias.html" >Technologies</a></li>
+          <li><a href="/pages/proyectos.html" class="active">Projects</a></li>
+        </ul>
+      </nav>
+    </header>
     <!---->
-    <section id="main" class="wrapper">
+    <section id="main" class="wrapper lang es">
       <div class="inner">
         <h1 class="major">
         </a>Mis Proyectos</h1>
@@ -82,6 +94,65 @@
         </div>
       </div>
     </section>
+
+    <section id="main" class="wrapper lang en hidden">
+      <div class="inner">
+        <h1 class="major">
+        </a>My projects</h1>
+        <div class="wrapper style2 project-grid-container">
+          <div class="project-card">
+          <img src="/images/pic01.png" alt="Zetta Servicios" class="project-card-image" />
+          <div class="project-card-content">
+            <h3>"Zetta Services"</h3>
+            <p>Management, Tracking, and Maintenance Project for a Certified Gas Technician. Developed using a Database-First approach</p>
+            <a href="proyectos/zetta-servicios.html" class="project-button">View details</a>
+          </div>
+          </div>
+          <div class="project-card">
+          <img src="/images/pic03.png" alt="INNOBRA" class="project-card-image" />
+          <div class="project-card-content">
+            <h3>"INNOBRA"</h3>
+            <p>Work Management Project for the subject Práctica Profesionalizante I. Developed collaboratively using the Scrumban methodology..</p>
+            <a href="proyectos/innobra.html" class="project-button">View details</a>
+          </div>
+          </div>
+          <div class="project-card">
+            <img src="/images/pic05.png" Salt="Proyecto 2024" class="project-card-image" />
+            <div class="project-card-content">
+              <h3>"Project 2024"</h3>
+              <p>Staff Management Project for the subject Modelado y Arquitectura de Software. Developed following the professor's lessons.</p>
+              <a href="proyectos/proyecto-inicio.html" class="project-button">View details</a>
+            </div>
+            </div>
+          <div class="project-card">
+          <img src="/images/pic07.png" alt="CRUD Empleados" class="project-card-image" />
+          <div class="project-card-content">
+            <h3>"Employees CRUD"</h3>
+            <p>Employee Management Project to test my skills in ASP.NET WebForms, developed using a Database-First approach.</p>
+            <a href="proyectos/crud-empleados.html" class="project-button">View details</a>
+          </div>
+          </div>
+          <div class="project-card">
+            <img src="/images/pic11.png" alt="Final-Programación II" class="project-card-image" />
+            <div class="project-card-content">
+              <h3>Final-Programming II</h3>
+              <p>Electronics Store Project for the subject Programming II. Developed in WinForms with a layered architecture.</p>
+              <a href="proyectos/final-prog2.html" class="project-button">View details</a>
+            </div>
+          </div>
+          <div class="project-card">
+            <img src="/images/pic17.png" alt="Tienda Celulares" class="project-card-image" />
+            <div class="project-card-content">
+              <h3>Electronics Store</h3>
+              <p>Mobile Phone Store Project to implement .NET 9 with Angular 19. Developed following Felipe Gavilán's course.</p>
+              <a href="proyectos/tienda-celulares.html" class="project-button">View details</a>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+
     <!---->
     <footer id="footer" class="wrapper alt">
       <div class="inner">
@@ -107,6 +178,16 @@
             </a>
           </li>
         </ul>
+        <ul class="actions">
+          <li ><!-- Selector de idioma -->
+              <div class="language-selector">
+                  <select id="language">
+                      <option value="es">Español</option>
+                      <option value="en">English</option>
+                  </select>
+              </div>
+          </li>
+      </ul>
       </div>
     </footer>
     <!-- JS -->
@@ -119,5 +200,6 @@
     <script src="/assets/js/main.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="/assets/js/swiper.js"></script>
+    <script src="/assets/js/language-selector.js"></script>
   </body>
 </html>
