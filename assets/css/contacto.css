@@ -11,3 +11,10 @@
     resize: none; 
   }
   
+  input{
+    font-size: 11pt;
+  }
+
+  textarea{
+    font-size: 11pt;
+  }

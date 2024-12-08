@@ -175,11 +175,6 @@ ul {
     border-width: 2px 2px 0 0;
     transform: rotate(45deg);
   }
-
-  .language-selector select{
-    width: 10em;
-    display: none;
-  }
       
 
 @media (max-width: 768px) {
