@@ -13,7 +13,7 @@ languageSelector.addEventListener("change", (event) => {
         elementsEn.forEach((el) => el.classList.add("hidden"));
 
         // Cambiar título al español
-        pageTitle.textContent = "Portafolio profesional de Stefano Gaggero";
+        pageTitle.textContent = "Portafolio de Stefano Gaggero";
     } else {
         elementsEn.forEach((el) => el.classList.remove("hidden"));
         elementsEs.forEach((el) => el.classList.add("hidden"));
