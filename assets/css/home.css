@@ -152,6 +152,7 @@ body{
 }
 
 
+
 /* .neon-text {
     color: #00BFFF; 
     text-shadow: 
@@ -175,6 +176,11 @@ body{
 
 
 @media (max-width: 768px) {
+
+.wrapper > .inner {
+    padding:  3em 2em 1em 2em!important;
+}
+
   #intro {
       height: 100vh;
       padding: 20px;
@@ -205,6 +211,11 @@ body{
   .social-icons li {
       list-style: none;
   }
+
+  .language-selector {
+    right: 10px !important;
+    top: 10px !important;
+  }
 }
 @media (min-width: 1024px)
 {
@@ -219,6 +230,11 @@ body{
 }
 
 @media (max-width: 414px) {
+    .wrapper > .inner {
+        padding:  3em 2em 1em 2em !important;
+    }
+    
+
   #intro {
       height: 100vh;
       padding: 20px;
@@ -249,9 +265,20 @@ body{
   .social-icons li a {
       font-size: 1.4em;
   }
+
+  .language-selector {
+    right: 10px !important;
+    top: 10px !important;
+  }
 }
 
 @media (max-width: 375px) {
+    
+    .wrapper > .inner {
+        padding:  3em 2em 1em 2em !important;
+    }
+    
+
     #intro {
         height: auto;
         padding: 10px;
@@ -282,5 +309,10 @@ body{
     .social-icons li a {
         font-size: 1.2em;
     }
+
+    .language-selector {
+        right: 10px !important;
+        top: 10px !important;
+      }
   }
 
