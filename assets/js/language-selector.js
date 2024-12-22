@@ -37,3 +37,10 @@ window.addEventListener("load", () => {
     // Forzar evento de cambio para sincronizar el idioma y título al cargar
     languageSelector.dispatchEvent(new Event("change"));
 });
+
+// Opción adicional para forzar recarga de página en Safari/iPhone si es necesario
+window.addEventListener("pageshow", (event) => {
+    if (event.persisted) {
+        loadLanguage();
+    }
+});
