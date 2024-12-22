@@ -77,10 +77,17 @@
 	}
 
   /* Selector de lenguaje */
+  .language-selector-home {
+    position: absolute;
+    right: 20px;
+    top: 30px;
+  }
+
   .language-selector {
     position: absolute;
     right: 20px;
     top: 30px;
+    display: none;
   }
 
   .language-selector select{
